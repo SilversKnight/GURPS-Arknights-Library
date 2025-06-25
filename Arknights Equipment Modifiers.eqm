@@ -1,0 +1,12 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "fKRjNOUsGfJnFITHr",
+			"name": "Arts Unit",
+			"local_notes": "A device that permits the usage of Originium Arts. May improve weapons and armor.",
+			"tech_level": "6",
+			"cost": "+10%"
+		}
+	]
+}
