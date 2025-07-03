@@ -1,0 +1,538 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "tZ5ARQw56IDWweF-S",
+			"name": "Terran Physiology",
+			"features": [
+				{
+					"type": "cost_reduction",
+					"attribute": "ht",
+					"percentage": 20
+				},
+				{
+					"type": "cost_reduction",
+					"attribute": "st",
+					"percentage": 20
+				},
+				{
+					"type": "cost_reduction",
+					"attribute": "dx",
+					"percentage": 20
+				},
+				{
+					"type": "cost_reduction",
+					"attribute": "iq",
+					"percentage": 20
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "Txquk3GpGp2q-0Zc_",
+			"name": "Ancients",
+			"children": [
+				{
+					"id": "to-Vtx5vroAyaWaq0",
+					"name": "Aegir",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqmCi6-O7Dt2yyLdp",
+					"name": "Anaty",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tw6hehFhrOTIk74cE",
+					"name": "Anura",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "txI7yf1OcdoDb79dh",
+					"name": "Archosauria",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tf3XLdBs52_UXD6-r",
+					"name": "Caprinae",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3YSaAhoJ6pFUFxY7",
+					"name": "Cautus",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tmTITaJFBqjQMB3yV",
+					"name": "Cerato",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "ts7w7uue-IueAH-_a",
+					"name": "Elafia",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t7TsSe9qGinX59M-D",
+					"name": "Feline",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t5OkYBBDeTyktPTgl",
+					"name": "Feline Aslan",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tNA1B4z8KdJvW3Ac1",
+					"name": "Forte",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t9gvjqSUfnx-8oMld",
+					"name": "Itra",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tXy9zLpBXVeXcxi3K",
+					"name": "Kuranta",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Restricted Diet (Vegetarian)"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Terran Physiology"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 10
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tbsH90hGXdxSBIBKR",
+					"name": "Liberi",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tNXKCdGM7B2i62WkY",
+					"name": "Lupo",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tWe42oaSGvfK2ipdb",
+					"name": "Manticore",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3RFBYpPLNTVNN6qt",
+					"name": "Perro",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzi4yzrTZrC5Htdcl",
+					"name": "Petram",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t4J1H2PKTV34O6dzW",
+					"name": "Phidia",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tomPdc72lcIoZ7tBt",
+					"name": "Pilosa",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t1XzIE3cDlEje6opH",
+					"name": "Reproba",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tgvXUBQnqjjVVdSs0",
+					"name": "Savra",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "txIm45UIQKc-1tvlP",
+					"name": "Ursus",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "trp_8qwBpT6Bq_EBa",
+					"name": "Vouivre",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tZhuabCea266rGcMi",
+					"name": "Vulpo",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tc7L4ScMArkS06uX3",
+					"name": "Zalak",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TH1i6DHJC0mdPgxFB",
+			"name": "Elders",
+			"children": [
+				{
+					"id": "t0_cOD1s43i_nHpNo",
+					"name": "Cerberus",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tT6le6M8V8vMLedg9",
+					"name": "Draco",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tWK1yv8R2n7ot6TBB",
+					"name": "Hippogryph",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tPPrfxSI5mt5GER-V",
+					"name": "Kitsune",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tGq1VllZJSOXZLAbP",
+					"name": "K'uk'ulkan",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqpB8s_YoD3SV_W_j",
+					"name": "Kylin",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tjRpz0lAHyxSOSuvt",
+					"name": "Lung",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqa6daaFEs9KFTBE3",
+					"name": "Nightzmora",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t4hPptY3C_XcXGu84",
+					"name": "Pegasus",
+					"local_notes": "Kuranta subrace; Reduce Magery trait cost per level to 8",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Distinctive Features (Pegasus)"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Restricted Diet (Vegetarian)"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Terran Physiology"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"base_points": 15,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "college_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Light \u0026 Darkness"
+							},
+							"amount": 1
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 10
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "t9ysezGBHhpxAio0I",
+					"name": "Unicorn",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "T-qFkFDfKAJByNJB8",
+			"name": "Teekaz",
+			"children": [
+				{
+					"id": "tlMk6ISp0IgZhTKcG",
+					"name": "Anasa",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3hHEVEZgQ0HBvfhv",
+					"name": "Durin",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "thPDJk_bwakyBE_F8",
+					"name": "Oni",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t9pz1QMF29-Bnfkrk",
+					"name": "Sankta",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tm6pYlrV_aBkm2D_N",
+					"name": "Sarkaz",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T5aioMV_6mipMMz_4",
+					"name": "Sarkaz Tribes",
+					"children": [
+						{
+							"id": "tpFwSJZKyVq6sUd2D",
+							"name": "Banshee",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tlcxAw25QBqAmGnT9",
+							"name": "Cyclops",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tSRJQ-qB2p8T5TfaQ",
+							"name": "Damazti",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tBTpSRjODOL4L4oKS",
+							"name": "Diablo",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tgVrLv0RUiFWEyzuA",
+							"name": "Djall",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tEubL20HZBq36-zEz",
+							"name": "Gargoyle",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tTJEsq6L9x__bZHGt",
+							"name": "Lich",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tGrm15ZbEQBorAqTz",
+							"name": "Nachzehrer",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tFTyfAkGry0HTkuQS",
+							"name": "Vampire",
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TKXv2w2n5BCsCe-AW",
+			"name": "Natives",
+			"children": [
+				{
+					"id": "tpEGh8wVLF6AYiFr9",
+					"name": "Elf Physiology",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}
