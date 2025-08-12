@@ -1,0 +1,343 @@
+{
+	"version": 5,
+	"id": "B1GRGf5dwrGHLFSae",
+	"traits": [
+		{
+			"id": "TUK6ieKwLLWpBxN5A",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tVJJmq_6Y8HJ3kY4b",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tg7ov-rxAN-8D8mzF",
+					"name": "Kuranta Physiology",
+					"local_notes": "You have a penchant for endurance and resistance. You may purchase HT at a significantly reduced cost, recover from fatigue and injury much quicker than most, and require generally less food. However, this comes at a cost for a general preference for vegetarian diets.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TzKlJL-8I3Pi8GM0L",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tOmTdYyCSuqEUehsr",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tvjUrFvV3Ir-V58PC"
+					},
+					"name": "Very Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate; lose FP at half the normal rate (in both cases, not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mtlMv_cdGlhg3PzsJ",
+							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape.",
+							"cost": -15,
+							"cost_type": "points"
+						},
+						{
+							"id": "mco4K7X64EV6jcUB2",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -20,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, resist poison",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tRSdtZhOEzWEWOBrJ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "trMfToThYl9fEmPdt"
+					},
+					"name": "Rapid Healing (Terran)",
+					"reference": "B79",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mRKFtGbimUznBJjmq",
+							"name": "Kuranta, Nightzmora, Pegasus Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to your effective HT whenever you roll to recover lost HP or to see if you can get over a crippling injury",
+							"amount": 5
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqk9n9WKYs2qgia8L",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tynHtgvWZmmNOL97D"
+					},
+					"name": "Reduced Consumption",
+					"reference": "B80",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mX1XTvvmJYdGv4g4p",
+							"name": "Cast-Iron Stomach",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mUCxdk0O9gMy1odCX",
+							"name": "Kuranta, Nightzmora, Pegasus Physiology",
+							"cost": -4,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mXVaaQxiBCzMJdi1r",
+							"name": "Food Only",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mrmAAN1oP-czbnLvs",
+							"name": "Water Only",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "tpdf4ECtR88OFQq4G",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tfn3e0qr_rzjWJ1XH"
+					},
+					"name": "Recovery (Terran)",
+					"reference": "B80",
+					"local_notes": "When determining the length of time you remain unconscious for any reason, divide all times by 60",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mu8Gp2XsR32VyjYFJ",
+							"name": "Kuranta Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 9
+			}
+		},
+		{
+			"id": "TnaUruxyeVmjEmgk8",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tbwSRQLt3bxU0meNs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t8duh7FJvBdSs4NOb"
+					},
+					"name": "Restricted Diet (Vegetarian)",
+					"reference": "B151",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m_SY1rkDGzpWFc8ul",
+							"name": "Substitution",
+							"reference": "B151",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mVDtpr-0GYxb9wy2W",
+							"name": "Very Common",
+							"reference": "B151",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mV2n722KnmDjHUGzy",
+							"name": "Common",
+							"reference": "B151",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mtVPiNWbY9PEagdov",
+							"name": "Occasional",
+							"reference": "B151",
+							"cost": -30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mK9pjyfS95wSkpRdw",
+							"name": "Rare",
+							"reference": "B151",
+							"cost": -40,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		}
+	]
+}

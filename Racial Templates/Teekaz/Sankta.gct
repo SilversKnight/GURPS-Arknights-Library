@@ -1,0 +1,531 @@
+{
+	"version": 5,
+	"id": "BdUcXmHsf3X0BtKsA",
+	"traits": [
+		{
+			"id": "TtB6XGpCFDdmSrbj8",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tmx09yHUEbDmHQnWr",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tw36pKaBqJ9PuILgB",
+					"name": "Sankta Physiology",
+					"local_notes": "You have a penchant for dexterous arts and a strong aim, both thanks to your physiology, and likely your upbringing. However, you struggle slightly on tasks relating to hefty physical labor. You may purchase DX at a significantly reduced cost, but must spend more to attain higher ST. Additionally, you have an innate Empathy with your fellow Sankta, and thanks to your innate abilities, start with Magery level 0 by default. You also may purchase the Gunslinger Advantage at a significant discount, but you can lose your privilege with such arms quickly...",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "trPmBmjfdamn_Hv0P",
+					"name": "Sankta Strength",
+					"local_notes": "When purchasing ST, the Attribute, USE THIS TRAIT. Do not use the normal attribute version unless we have verified you have increased its cost manually in your sheet. ST for Sankta costs 20% more than normal.",
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TIdVPCkLYty_1snBD",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "t-TREd4QkS9TvSoxe",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t2DbPj94pwogJFnWc"
+					},
+					"name": "Empathy (Sensitive)",
+					"reference": "B51",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mGhhz-wWf6V255MN8",
+							"name": "Remote",
+							"reference": "P48",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mg8BJw90KzClPqycm",
+							"name": "Sankta Sensitivity",
+							"local_notes": "Your Empathy only functions on other Sankta. You must remove your cost reduction to take for all races.",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mRlA3_y4g_hSlB-gV",
+							"name": "Djall",
+							"local_notes": "You are a Djall, and your inherent feel for people, while weak, is tied heavily to your being.",
+							"cost": -80,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "detect lies"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fortune-telling"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tHjS_cfUc5YZHkJgx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mpb5q2OMS5sDul0kz",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mEJM4cgl7e_g1DSeX",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m74Txn3O_YOFzrQfp",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost": -20,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m9iifbbodFITkQ86e",
+							"name": "Sankta Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "m3e40JQ93qyrx8waO",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mP2hS47RdIvZ-RaCc",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "moAzuCNr841tAkHoW",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mxc_ROSkBVltSnxyF",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "miF6XQUyQodC3wIT2",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mKtA-QrjKw-LpmmIh",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mVuZ416z1v0nGUVqB",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tChhqlBAeQfRlSd5i",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t4wDTpXzFtP1yT7BF"
+					},
+					"name": "Heroic Feats of @One of Strength, Dexterity, or Health@",
+					"reference": "B41",
+					"local_notes": "Once per game session, you may add 1d to @One of Strength, Dexterity, or Health@, which lasts 3d seconds",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mfHmdg7zccEr29IJM",
+							"name": "Law-Bound Sankta",
+							"cost": -10,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tawW-1nYoy7oyHOCf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tO0G2kcresS1YZ_KE"
+					},
+					"name": "Daredevil",
+					"reference": "B47",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "m2b88aaqECWVob86B",
+							"name": "Sankta Daring",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to skill rolls any time you take an unnecessary risk (in the GM’s opinion)",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tsT1OosUBCiAVQUx6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t6VL5FJC9tWm68DU4"
+					},
+					"name": "Sankta Allowance",
+					"reference": "B26",
+					"local_notes": "Sankta born in Laterano receive a monthly \"balance\" to spend. This functions as Inpdendent Income, but the allowance doesn't carry over to the next month. This applies even when outside of Laterano, delivered by patrons, or otherwise used digitally or in cheques.",
+					"tags": [
+						"Advantage",
+						"Social"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tTSENcp2IqFfJtMRC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tTBge18Cvign1H3tX"
+					},
+					"name": "Telescopic Vision",
+					"reference": "B92,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mVkyOKAKafwMx2c1G",
+							"name": "No Targeting",
+							"reference": "B92",
+							"cost": -60,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "Tcfbw-dVYJxb-jPy6",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tOBEA3ZSaRMmcYUQs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t_ZUyO0Xhmi2p0Vku"
+					},
+					"name": "Unnatural Features (Halo \u0026 Wings)",
+					"reference": "B22",
+					"local_notes": "Your Halo and Wings cause extreme problems when attempting to disguise yourself and make it fairly easy to spot you in a crowd.",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"points_per_level": -1,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							},
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							},
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tIPBaOyIa5KQia-XH",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tzBDG0xUlT_dh7FuY"
+					},
+					"name": "Chummy",
+					"reference": "B126",
+					"local_notes": "As a Sankta, you prefer company, and are often trusting unless given reason to be otherwise, thanks to your upbringing.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to others",
+							"amount": 2
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to IQ-based skills when alone",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tR16SIecYhpTOkVmh",
+					"name": "The Law",
+					"local_notes": "A binding principle of all Sankta is The Law. This comes with many facets, but also many different punishments. Acting outside the bounds of The Law is considered paramount to sacrilege, not only in the culture, but in the eyes of the deific figure that guides you and grants you boons. A few key principles will be listed, but keep in mind that this does not cover all rules of The Law, and some of it is up to interpretation.\n\n- You may not fire your Patron firearm against another Sankta, lest you Fall.\n- You may not fire your Patron firearm more than six times in one second, lest you be annihilated.\n- You may not raise a hand against officials appointed by The Law, lest you Fall.\n\nShould you ever 'Fall,' you will lose this Disadvantage, alongside Heroic Feats, and replace them with a new template (provided if this occurs, or if someone starts as a Fallen Sankta).",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -20
+			}
+		}
+	]
+}

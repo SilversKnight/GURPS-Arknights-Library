@@ -1,0 +1,409 @@
+{
+	"version": 5,
+	"id": "BE2d0aENPBjvtr0ix",
+	"traits": [
+		{
+			"id": "TiGC7rrEP9AMfjTw4",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "t3pHUvVwzp3JwuZ1H",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "twFG0G-gTEW7kAnWL",
+					"name": "Draco Physiology",
+					"local_notes": "You are a Draco, a potent force of magical capability, and once destined for royalty, though likely, your crown has become someone else's. However, your royal blood has nonetheless remained, giving you a minor decrease to the cost of health, a minor cost reduction to strength alongside a significant cost decrease for levelling Arts Casting. However, you must spend more for dexterity. On top of this, you receive significant boons for gaining fire-related spells, your tail, and begin with Arts Casting level 0.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tBJR0SD8B_HPtL3VO",
+					"name": "Draco Dexterity",
+					"local_notes": "When purchasing DX, the Attribute, USE THIS TRAIT. Do not use the normal attribute version unless we have verified you have increased its cost manually in your sheet. DX for Dracos costs 20% more than normal.",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TAwHzV5AMRLor3CDD",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tv5DPJFH16aiyMRML",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mGcQ6swsh3-nH72Hu",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost": -20,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m8Hh2KD0BOhIzuMY1",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"id": "m6q3du7t4E1XKBvx8",
+							"name": "Draco Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "moyX36we69Iyn8uX_",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mkYoDPY8UqfPqae7g",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mEmoYaSbbjBho2ESt",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mp4Y41bTPULljBa8s",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mNqffscJXYuq1u8I6",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mI-Zuw-3nSM6icYbV",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mNATYfezhBPtdojlj",
+							"name": "Sankta Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only",
+							"disabled": true
+						},
+						{
+							"id": "mJl6F0s1uzMh_7iek",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m95ZjidTTEKQSDnJu",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4,
+							"leveled": true
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tVwsc_chBiX6qI2Y-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "teVkdoeyqvv4QStNk"
+					},
+					"name": "Draco Heritage",
+					"reference": "B77",
+					"local_notes": "Your heritage as a Draco gives you unique capabilities and insight into the nature of your fire-related Arts. This grants a bonus to your IQ equal to this Advantage's level +1, and allows you to ignore prerequisites for many fire-related spells (GM discretion).",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzdIM5dBj5AlWI0ge",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t3tB-FuaaYA8n7N88"
+					},
+					"name": "Draco Flame Enhancement",
+					"reference": "B68,P59",
+					"local_notes": "This acts as Mana Enhancer, but requires one second of activation time, and applies solely to spells of the fire college, or spells that deal fire damage, that you cast.",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mDoK3g6HM3rfj9Ggy",
+							"name": "Area Effect",
+							"reference": "B68",
+							"cost": 50,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mECH3X0f1Kj2kXfiF",
+							"name": "Draco Arts",
+							"local_notes": "While it takes some time, you can make the potency of your spells greater than most, and resist some level of Originium Arts dead zones due to it. Your heritage has led you to this point.",
+							"cost": -10,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "mGoag-zG5saG0yDZs",
+							"name": "Switchable",
+							"reference": "B68",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mtuJVaj3ZZQ1PuTGM",
+							"name": "Fire Only",
+							"cost": -30
+						},
+						{
+							"id": "mvEhFqztwmSe3vwq8",
+							"name": "Discriminatory",
+							"reference": "P59",
+							"cost": 150,
+							"disabled": true
+						},
+						{
+							"id": "mZh5ezcu_x4OYVplJ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+								"id": "m1DilmWqMoaHpQb90"
+							},
+							"name": "Takes Extra Time",
+							"reference": "B115,P106",
+							"cost": -10,
+							"levels": 2
+						}
+					],
+					"base_points": 50,
+					"points_per_level": 50,
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				}
+			],
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "TM4c0SXG-dFJ1WCR3",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tqobjNARdPUa69YYq",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t_ZUyO0Xhmi2p0Vku"
+					},
+					"name": "Unnatural Features (Flaming Tail)",
+					"reference": "B22",
+					"local_notes": "Your tail, with a fire that never seems to die out, constantly draws attention. Even when deliberately covered, its light can seem obvious to those paying attention, so your Draco heritage always is on full view.",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"points_per_level": -1,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							},
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							},
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tth0bTwova1mADA9u",
+					"name": "Exoticized",
+					"local_notes": "Your unique circumstances as a 'dying race' finds strange reactions from all across Terra. Conservatives in Sargon and Victoria often see you as rightfully a ruler, and will often try to pull you in to conversations about the usurpation of the crown, and can occasionally get you associated with bad people. Others often see you as a relic, treating you with a sense of wonder, but also constantly wanting to hear details about your life and \"what it's like\" being a Draco. And there are others, still, that see you as a threat to some lineages, especially those in Sargon and Victoria, considering you an invader to their lands. This must be roleplayed, but it can be assumed that to the final group, you have a -3 Reaction penalty with them!",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				}
+			],
+			"calc": {
+				"points": -20
+			}
+		}
+	]
+}

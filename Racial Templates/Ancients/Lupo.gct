@@ -1,0 +1,265 @@
+{
+	"version": 5,
+	"id": "BntcMca0xCWWFdBcb",
+	"traits": [
+		{
+			"id": "TZ2LagqO2mo0G4stV",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tOz7CaLRVsq_ndb-A",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tDRRVPhFDNno_F733",
+					"name": "Lupine Physiology",
+					"local_notes": "Your unique capabilities allow you to purchase DX and HT cheaper. Additionally, some of your senses are inherently better than average, and you can recover from fatigue quicker than most.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TtJEtjo19m_TXg2Y3",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "t2r-6vzJyziBgLcb6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tTr0n87UXk6YrVoKR"
+					},
+					"name": "Discriminatory Hearing (Lupo)",
+					"reference": "B49,P47",
+					"local_notes": "You naturally have a way to pick out noise from a crowd. If you want to have the 'Profiling' modifier, click in and use the second modifier instead of the one clicked on by default",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mrLmheQJ8cJMmmWGr",
+							"name": "Only underwater",
+							"reference": "B49",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "mK9yUVjxKagJf5_Gk",
+							"name": "Lupine Physiology",
+							"cost": -15,
+							"cost_type": "points"
+						},
+						{
+							"id": "mgpkYoRoWgxjCli_z",
+							"name": "Lupine Physiology (Profiling)",
+							"cost": -100,
+							"disabled": true
+						},
+						{
+							"id": "ms8MDI6w5m-YiVXfU",
+							"name": "Profiling",
+							"reference": "P47",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Shadowing skill when following a noisy target",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on any task that utilizes hearing",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t1DjSRN5GcSl498Oc",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSv_wTFThILN-4rlX"
+					},
+					"name": "Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mR0uygorW24Xc_7zM",
+							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape. This comes for free on Kuranta!",
+							"cost": -100,
+							"disabled": true
+						},
+						{
+							"id": "mtKm5TG74bPcpBJWg",
+							"name": "Lupo Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mIIFRFSCsHTKbaMXz",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t64smnZnfLFwV8fOP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t4niYkiMo0s9g3yAV"
+					},
+					"name": "Ultrahearing (Terran)",
+					"reference": "B94,P51",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mqZ6yvS9xidcjXs2m",
+							"name": "No normal hearing",
+							"reference": "B94",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCVQDq_L_CzvUtxkA",
+							"name": "Perro, Lupo, Reproba, Vulpo Physiology",
+							"local_notes": "As a canine race, you can naturally hear in higher frequencies.",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TVNtKDwMspHBWzUz6",
+					"name": "Racial Disadvantages",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

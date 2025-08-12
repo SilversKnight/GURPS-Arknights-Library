@@ -1,0 +1,220 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "syLW2LYpjC45-YAUQ",
+			"name": "Arts Firearms",
+			"specialization": "Small",
+			"difficulty": "dx/e",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Arts Casting"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "sfazPbi25zKgVwGzP",
+			"name": "Arts Firearms",
+			"specialization": "Medium",
+			"difficulty": "dx/e",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Arts Casting"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "sfTYIabr0GapFK2FV",
+			"name": "Arts Firearms",
+			"specialization": "Heavy",
+			"difficulty": "dx/e",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Arts Casting"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "sgDVddbHLYDmRYfNa",
+			"name": "Arts Firearms",
+			"specialization": "Huge",
+			"difficulty": "dx/e",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Arts Casting"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "sFOLBy9o9aOdJiBc5",
+			"name": "Arts Firearms",
+			"specialization": "Artillery",
+			"difficulty": "dx/e",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Arts Casting"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "q3ZMe2BmLAt704dpc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "High Tech\\High Tech Skills.skl",
+				"id": "qKSlNsYAh1_Sti_mT"
+			},
+			"name": "Precision Aiming",
+			"reference": "HT251",
+			"local_notes": "Arknights Version",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Arts Firearms",
+				"specialization": "@Speciality@",
+				"modifier": -6
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Observation"
+						}
+					}
+				]
+			},
+			"points": 1
+		}
+	]
+}

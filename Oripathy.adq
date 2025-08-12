@@ -1,0 +1,507 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "T7zq1pQrVI_VErvKW",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Trait Libraries\\Arknights Terran Traits.adq",
+				"id": "TR5wLr6GK0Qb5RyYQ"
+			},
+			"name": "Oripathy",
+			"children": [
+				{
+					"id": "tQe2W8gJwH5ZbuMN7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "thCV-WOHk_zYRdDj7"
+					},
+					"name": "Oripathy: Pain",
+					"reference": "B130",
+					"local_notes": "To determine how painful your Oripathy is and how it affects you.",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "MTBaxBSgaWa4pXBH-",
+							"name": "Oripathy Stages",
+							"local_notes": "You must select one of these two.",
+							"children": [
+								{
+									"id": "mAj6WIX0p88PBveNp",
+									"name": "Oripathy: Stage I",
+									"local_notes": "At Oripathy Stage I, you possess, by default, minor pain occasionally. Every day, roll against your Frequency of Appearance check (below). If failed, you gain Mild pain for an interval you select, as well (-2 to DX, IQ, and Self-Controll rolls).",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mQkw9sFUFqU24Cqi8",
+									"name": "Oripathy: Stage II",
+									"local_notes": "At Oripathy Stage II, you possess, by default, severe pain occasionally. Every day, roll against your Frequency of Appearance check (below). If failed, you gain Severe pain for an interval you select, as well (-4 to DX, IQ, and Self-Controll rolls).",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "MlKStwHCCJYjE8klD",
+							"name": "Intervals of Pain",
+							"local_notes": "Determines how long your episodes of pain last. You must select one.",
+							"children": [
+								{
+									"id": "m6oEqkYcymGD-Wgvg",
+									"name": "1 hour",
+									"cost": 0.75,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mBQBftxV3S3NXpLKf",
+									"name": "2 hours",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mgJ1JhCRJMQ4vAAfe",
+									"name": "4 hours",
+									"cost": 1.25,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mOff5w0Z2NDKuVjYH",
+									"name": "8 hours",
+									"cost": 1.75,
+									"cost_type": "multiplier",
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "M7VYtnsh-eLoqFO9W",
+							"name": "Frequency of Appearance",
+							"local_notes": "How rare—or common—your episodes of pain are. You must select one.",
+							"children": [
+								{
+									"id": "mBPzAkINYVaGigH33",
+									"name": "Extremely Rare",
+									"local_notes": "Attack occurs on a roll of 6 or less.",
+									"cost": 0.75,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "m_RcQCdrOIKdRiSXR",
+									"name": "Fairly Rare",
+									"local_notes": "Attack occurs on a roll of 9 or less.",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "m4Nrz4pwdnV5a-TyT",
+									"name": "Somewhat Common",
+									"local_notes": "Attack occurs on a roll of 12 or less.",
+									"cost": 1.5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mbozjYMSqdaf7o1a-",
+									"name": "Very Common",
+									"local_notes": "Attack occurs on a roll of 15 or less.",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "trX-_fZSAz5-UFW4i",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "t8AUOWt3oF01uibij"
+					},
+					"name": "Oripathy: Treatment",
+					"local_notes": "To determine how often you require active treatment for your Oripathy. Advanced conditions may require a bit more than just a dose of Suppressant.",
+					"modifiers": [
+						{
+							"id": "MOJFPUUb8OQv8q6VX",
+							"name": "Oripathy Stages",
+							"local_notes": "Choose as you chose for Oripathy: Pain.",
+							"children": [
+								{
+									"id": "mnJfCcOuZqJxbqcrf",
+									"name": "Oripathy: Stage I",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mvJ-X4MGcZBrWhcqR",
+									"name": "Oripathy: Stage II",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "MOfbxjxis8jpS5Svm",
+							"name": "Dosage Necessities",
+							"local_notes": "This determines how often you need to take a dose of Oripathy Suppressants. Normally, dosages are monthly, but some conditions are known to require them more, or less often. Not taking the Suppressant progresses the disease painfully, and quickly.",
+							"children": [
+								{
+									"id": "mRk_Y_HwvtDnVc8si",
+									"name": "Dosage: Weekly",
+									"reference": "B130",
+									"local_notes": "Lose 1 HP per six hours after missing a weekly dose",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mT0zL2Nwkz85GsSOu",
+									"name": "Dosage: Monthly",
+									"reference": "B130",
+									"local_notes": "Lose 1 HP per day after missing a monthly dose",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "mPivNK22_uRzXdz0Y",
+									"name": "Dosage: Trimonthly",
+									"reference": "B130",
+									"local_notes": "Lose 1 HP per 3 days after missing a seasonal dose",
+									"cost": 0.3333,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "m1kZHPP4rK3wx2Gne",
+									"name": "Dosage: Yearly",
+									"reference": "B130",
+									"local_notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
+									"cost": 0.1,
+									"cost_type": "multiplier",
+									"disabled": true
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tIkAJ8Mp8K0DJjbGB",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "thznGco06Pj3Yzl1F"
+					},
+					"name": "Oripathy: Invasive Condition",
+					"local_notes": "A unique condition of Oripathy, yours is particularly invasive on a specific part of your body. Invasive Oripathy requires you to take Oripathy, but can be of either stage. The higher versions of Invasive Condition are not exclusive to Stage II base Oripathy, either. These are OPTIONAL, and not required.",
+					"modifiers": [
+						{
+							"id": "Mf4a1bMo3X561Mrye",
+							"name": "Invasive Oripathy",
+							"local_notes": "Particularly invasive conditions of Oripathy come with unique difficulties. Some conditions come with more difficulties than others. To select the [II] variants, be sure to select ONLY the [II] variants of the Invasive condition.",
+							"children": [
+								{
+									"id": "mSbg58klxX_CuPvHM",
+									"name": "Invasive Oripathy I (Leg)",
+									"local_notes": "You take a -3 to use any skill that requires the use of your Leg, including Melee weapon skills, and unarmed combat skills (but not ranged combat). Your Basic Move also reduces to half of your Basic Speed.",
+									"cost": -10,
+									"cost_type": "points",
+									"use_level_from_trait": true,
+									"disabled": true
+								},
+								{
+									"id": "mHzTIUpvtUXHIZ1TM",
+									"name": "Invasive Oripathy II (Leg)",
+									"local_notes": "Your condition worsens to become a -6 to all skills involving the use of your legs. You cannot walk, stand, or kick without crutches or other support.",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mp5lpWBmRGrkk0UPm",
+									"name": "Invasive Oripathy I (Arm)",
+									"local_notes": "You receive a -4 penalty on tasks that require two arms, or a -2 on tasks that are best executed with two arms. If not necessary, this penalty can be ignored, though be sure to keep track of your non-dominant arm.",
+									"cost": -10,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on tasks that require two arms",
+											"amount": -4
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "on tasks that are best done with two arms",
+											"amount": -2
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mhtI69JKh3ZStUPtU",
+									"name": "Invasive Oripathy II (Arm)",
+									"local_notes": "You cannot perform tasks that require two arms, and take a -4 on tasks that are possible with one arm, but better executed with both. One of your arms has effectively lost all function.",
+									"cost": -20,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on tasks that are better done with two arms",
+											"amount": -4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mmSvkF3ohhlYejD4a",
+									"name": "Invasive Oripathy I (Hearing)",
+									"local_notes": "You aren't quite deaf, but you take a -4 to all Hearing rolls, and on any skill where it's important that you understand someone.",
+									"cost": -10,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "hearing",
+											"amount": -4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mi-dRwJOV_DAPryr6",
+									"name": "Invasive Oripathy II (Hearing)",
+									"local_notes": "You are nearly, or entirely, deaf. You must receive information in writing or through sign language, though time you spend communicating this way is more effective for teaching purposes.",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m-KOHuX2hn1cQbyUI",
+									"name": "Invasive Oripathy I (Optic Nerve, Farsighted)",
+									"local_notes": "You become farsighted. You cannot read most text except with great difficulty. You are at a -6 to Vision rolls to spot items within one yard, and you have a -3 to DX on any close manual task, including close combat. (You may apply the Glasses Mitigator as normal)",
+									"cost": -25,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to DX for any close manual task, including close combat",
+											"amount": -3
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to Vision rolls to spot items within 1 yd",
+											"amount": -6
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m-zzyMuK8VAwXxITt",
+									"name": "Invasive Oripathy I (Optic Nerve, Nearsighted)",
+									"local_notes": "You become nearsighted, not able to read most displays or prints at more than a foot away, and road signs at no more than ten yards. You are at -6 to spot items more than one yard away, and when making a melee attack, you're at a -2 to skill. When making a ranged attack, double the actual distance when calculating your range modifier. (You may apply the Glasses Mitigator as normal)",
+									"cost": -25,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to all melee attacks",
+											"amount": -2
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to Vision rolls to spot items more than 1 yd away",
+											"amount": -6
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mMPlg_ebjiCKx4mK6",
+									"name": "Invasive Oripathy II (Optic Nerve)",
+									"local_notes": "You lose all sight. You must travel slowly in unfamiliar territory, often requiring some kind of guide, and certain actions are impossible for you. You are at a -6 to all combat skills, cannot target specific hit locations, can only attack randomly with ranged weapons or engage targets close enough to hear them, and you cannot purchase superhuman vision abilities, even if they would be applicable for your race.",
+									"cost": -50,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mIaja5_JQi0UPFeu1",
+									"name": "Invasive Oripathy I (Spine)",
+									"local_notes": "Your pain is worsened. If you are at Stage I Oripathy, your pain worsens to mirror Stage II's. If you are at Stage II, your pain worsens to Agonizing (-6 to DX, IQ, and Self-Control rolls).",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mZsi4sTUcQrU_0jVH",
+									"name": "Invasive Oripathy II (Spine)",
+									"local_notes": "Also, you lose -1 DX permanently. Additionally, if you ever reach Stage III Oripathy, you immediately become incapacitated, save for exceptional circumstances. Effectively, your character is out of commission for good.",
+									"cost": -25,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "dx",
+											"amount": -1
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mOCgh5CpXtbw6XfQl",
+									"name": "Invasive Oripathy I (Brain)",
+									"local_notes": "Your pain is worsened. If you are at Stage I Oripathy, your pain worsens to mirror Stage II's. If you are at Stage II, your pain worsens to Agonizing (-6 to DX, IQ, and Self-Control rolls). If your Skull or face is struck with Crushing damage, you must also immediately roll against your Oripathy: Pain. If failed, you suffer its effects.",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mcYvm5MbtdkcbKs6n",
+									"name": "Invasive Oripathy II (Brain)",
+									"local_notes": "You also take a -1 to your IQ. Additionally, if you ever reach Stage III Oripathy, you immediately become incapacitated, save for exceptional circumstances. Effectively, your character is out of commission for good.",
+									"cost": -30,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "iq",
+											"amount": -1
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mVROMQKgJoC18QcwJ",
+									"name": "Invasive Oripathy I (@Heart OR Liver@)",
+									"local_notes": "Your vitals are affected deeply, whether the heart or the liver. You take a -1 penalty on all HT rolls to remain conscious, avoid death, resist disease or poison, and so on. You also lose HT at double the normal rate, and cannot purchase the Fit Advantage. Finally, if you are ever struck in the Vitals, or take an attack to your affected vital organ (heart or liver), you must roll a check against your Oripathy: Pain immediately, on top of the normal damage. If failed, you take the penalties that would normally be incurred.",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mUvji5Q_eeQvSnhbA",
+									"name": "Invasive Oripathy II (@Heart OR Liver@)",
+									"local_notes": "On top of Invasive Oripathy I, you also take a permanent -1 to your HT attribute, and the penalties to HT rolls increases to -2. If your specific organ or your Vitals are struck by an effect, failing against Oripathy: Pain due to it also causes you to lose FP equal to the margin of failure, to a max of half your maximum FP.",
+									"cost": -30,
+									"cost_type": "points",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "ht",
+											"amount": -1
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mk9wPqWS2y139X9v2",
+									"name": "Invasive Oripathy I (Vocal Cords)",
+									"local_notes": "You struggle to speak naturally. If you ever wish to speak, you must roll against your HT to vocalize at all. Your HT for this check also cannot exceed a 16. If you fail this check, you must roll against your Oripathy Pain. If successful, you're able to speak for up to a minute semi-unimpeded, although your sentences likely still come out broken, and you cannot vocalize louder than a whisper during this time. You can end the effect early to yell or speak normally for one sentence or second.",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m8KASTPtTj8yGyxm_",
+									"name": "Invasive Oripathy II (Vocal Cords)",
+									"local_notes": "You are completely mute. You may still occasionally eke out sounds, but they're quiet, breathy, and rarely useful for conveying information. You may still communicate through writing, sign language (must be taken as a separate language), or gestures.",
+									"cost": -25,
+									"cost_type": "points",
+									"use_level_from_trait": true,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "M0lU61yGSVxRvzM59",
+							"name": "Invasive Oripathy Modifiers",
+							"children": [
+								{
+									"id": "mBApo48vzuacPWRxZ",
+									"name": "Optic Nerve: One Eye",
+									"local_notes": "You halve all the usual penalties associated with taking issues with your Optic Nerve. If you are at Invasive Oripathy II, you do not become totally Blind, and instead take the same penalties alongside a -1 to DX in combat, and an additional -3 on ranged attacks unless you Aim first.",
+									"cost": -30,
+									"disabled": true
+								},
+								{
+									"id": "mGmQrf1oNS2hSfFpX",
+									"name": "Hearing: One Ear",
+									"local_notes": "You halve all the usual penalties associated with the hearing invasive condition. If you are at Invasive Oripathy II, you instead double the usual penalties from Invasive Oripathy I.",
+									"cost": -30,
+									"disabled": true
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "twkSskYJKSOI4Vfr_",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tFVCzZZ1e01Fvormg"
+					},
+					"name": "Oripathy: Resistance",
+					"local_notes": "Determines your resistance to Oripathy. You will be expected to keep track of your Oripathy Resistance value (default equal to triple your HT score). Whenever you miss a Dosage of Suppressant, roll a HT roll at each interval. If failed, you reduce your resistance by one point (or by two on a 17 or 18 on the dice!), on top of the lost HP. \n\nIf you were at Stage I, you progress to Stage II automatically upon your resistance equalling half of your Resistance score. (beginning at Stage II starts you at this point!)\n\nIf you reach one quarter of your resistance score, you progress to Stage III, and your Dosage requirement goes up by one step. You gain no additional points from this.\n\nFurthermore, your Oripathy may begin to worsen regardless of treatment at Stage III. Everyday that causes pain due to your Oripathy also reduces your Resistance value as if you failed normally.\n\nBeing in a Catastrophe, or other areas with high Originium concentration might also cause your Resistance to falter. The GM will often call for a HT roll, unless not applicable due to excessive concentration.\n\nYou may alter your resistance with the modifiers on this Trait further, weakening or strengthening them, depending on your character's physiologies. Some people are 'built different!'\n\nAdditionally, if your HT score ever rises during play, you may restore one point of Resistance for every point your HT rises, representing you keeping in good practice to fend off your condition.",
+					"modifiers": [
+						{
+							"id": "mVEpwrQKUGsRobQU8",
+							"name": "Susceptible",
+							"local_notes": "Contracting Oripathy for you is, unfortunately, easier. If the GM ever rolls, or asks you to roll, against your HT value to determine if you contract Oripathy, you take a -4 to your HT for determining whether you contract it.\n\nAdditionally, if you do contract Oripathy, your resistance is lowered from the normal value (2x your HT score), though your progression between each stage of Oripathy changes to reflect your new value.\n\nYou may also never gain resistance to Oripathy-related circumstances outside of external equipment, and your innate Resistance does not apply to Oripathy-related scenarios.",
+							"cost": 2,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "m5NyEFgVjnLPJV5Cz",
+							"name": "Foregone",
+							"local_notes": "Your Oripathy seems to progress regardless of how fit you get, or how you take care of yourself. Your base Oripathy resistance always assumes 10 HT for all purposes, regardless of how high it actually is, unless it would be lower. If you ever lose a point in your HT attribute, you lose a point of Oripathy resistance as normal, but you can never gain them from physical conditioning. Yours will simply progress.",
+							"cost": 1.5,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "mS0NDTwCNW5CtCpU_",
+							"name": "Potent Resilience",
+							"local_notes": "You're naturally less susceptible to Oripathy for some reason... Your default Oripathy resistance score is equivalent to quadruple your HT attribute, rather than triple, and you receive a +1 on all HT rolls to resist Oripathy progression.",
+							"cost": 0.5,
+							"cost_type": "multiplier",
+							"disabled": true
+						}
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		}
+	]
+}

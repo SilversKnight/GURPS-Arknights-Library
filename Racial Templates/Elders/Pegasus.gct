@@ -1,0 +1,537 @@
+{
+	"version": 5,
+	"id": "BkvTachYGMbutrv5x",
+	"traits": [
+		{
+			"id": "Tmas1EE9X9R7TPQN7",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "toMmrR-acFwD06PkR",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tQJF109BjHrTObx6H",
+					"name": "Pegasus Physiology",
+					"local_notes": "You have a penchant for endurance and resistance. You may purchase HT at a significantly reduced cost, recover from fatigue and injury much quicker than most, and require generally less food. However, this comes at a cost for a general preference for vegetarian diets. You also begin with Arts Casting level 0 for free, but come with more Disadvantages due to your perception as a Pegasus. You are obvious.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TSWEKKRg1CxQJqHgS",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "trfC99TOTodSZ_ibs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tvjUrFvV3Ir-V58PC"
+					},
+					"name": "Very Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate; lose FP at half the normal rate (in both cases, not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mWfyjdg7CkmgqxSHP",
+							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape.",
+							"cost": -15,
+							"cost_type": "points"
+						},
+						{
+							"id": "mSMVydjAp0THLJ6cx",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -20,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, resist poison",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tiJ2MByo-85IT93pI",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "trMfToThYl9fEmPdt"
+					},
+					"name": "Rapid Healing (Terran)",
+					"reference": "B79",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "moSE1YUpo01LPkbxv",
+							"name": "Kuranta, Nightzmora, Pegasus Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to your effective HT whenever you roll to recover lost HP or to see if you can get over a crippling injury",
+							"amount": 5
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tSkK0lxP515UbX2zl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tynHtgvWZmmNOL97D"
+					},
+					"name": "Reduced Consumption",
+					"reference": "B80",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m51bGNcYBSthW0Xc7",
+							"name": "Cast-Iron Stomach",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mIvdksrklxZwqzsFg",
+							"name": "Kuranta, Nightzmora, Pegasus Physiology",
+							"cost": -4,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mF5kyQLn9tXJEhbQR",
+							"name": "Food Only",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mQx1LZSVWAUu9sqL1",
+							"name": "Water Only",
+							"reference": "B80",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "tCnkdOSN_UPAy9QR0",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tfn3e0qr_rzjWJ1XH"
+					},
+					"name": "Recovery (Terran)",
+					"reference": "B80",
+					"local_notes": "When determining the length of time you remain unconscious for any reason, divide all times by 60",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mkp3mwJjq_IsAUOcI",
+							"name": "Kuranta Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tHadMGTZrnXKTJhc-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mZS_M631UIYfxIZ7_",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mcTz1cDgH2XrM58I3",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m9yIyEbdFZNhLSl4N",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost": -20,
+							"affects": "levels_only"
+						},
+						{
+							"id": "mvCrZb_8YlFsSkieT",
+							"name": "Sankta Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only",
+							"disabled": true
+						},
+						{
+							"id": "m86UO7ZHbQJHv2XZL",
+							"name": "Pegasus Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "md5pRRJ0tFtw56FFb",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mwuFgYGSOyfgnxvcO",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mUiTYIbvX2lIapgrZ",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mBUIKsF6qY-6-8ds7",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m1CPItObRIqljPPKL",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mRzty2HCG52pQaqUo",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mLsLk0eOajo3hUXMP",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4,
+							"leveled": true
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 9
+			}
+		},
+		{
+			"id": "TdmifPOncm8G9lqyk",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tCztyM_GbbEXoVERM",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tErK4cLrSt07-XLYQ"
+					},
+					"name": "Distinctive Features (Golden Hair \u0026 Tail)",
+					"reference": "B165",
+					"tags": [
+						"Physical",
+						"Quirk"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from Ursine conservatives",
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from the bourgeois of Kazimierz",
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							},
+							"amount": -1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to others’ attempts to identify or follow you",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tv9oecfLfngKJBci7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t8duh7FJvBdSs4NOb"
+					},
+					"name": "Restricted Diet (Vegetarian)",
+					"reference": "B151",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mXzriISZQ66GLRMLh",
+							"name": "Substitution",
+							"reference": "B151",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mx4iwsoQit1roBdfh",
+							"name": "Very Common",
+							"reference": "B151",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mpMM13X1rmAuubxUF",
+							"name": "Common",
+							"reference": "B151",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mqqVOkL68fVgwYmHm",
+							"name": "Occasional",
+							"reference": "B151",
+							"cost": -30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mf_bo-x-kSv2LZZeg",
+							"name": "Rare",
+							"reference": "B151",
+							"cost": -40,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -15
+			}
+		}
+	]
+}

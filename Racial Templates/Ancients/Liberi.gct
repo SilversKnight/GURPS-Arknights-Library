@@ -1,0 +1,393 @@
+{
+	"version": 5,
+	"id": "B2q9woQ5-YHlN7-Ma",
+	"traits": [
+		{
+			"id": "Tfe3XOC-59Tg6QOba",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tibNbbyJs-XlYhE3T",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tchAaW1KIcgCEpoqQ",
+					"name": "Liberi Physiology",
+					"local_notes": "You possess a notable affinity for Dexterity as a Liberi, but struggle in regards to heavy lifting and similar capabilities. You're also lighter and inherently more frail by comparison on average. You purchase DX at a significantly lower cost, but purchase ST at a higher cost. Additionally, you, due to being one of the major predominant races on Terra, found nearly everywhere, can fit in with mostly any cultural identity necessary. You never look out of place.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tFAZDO-yPklPFVCCR",
+					"name": "Liberi Strength",
+					"local_notes": "When purchasing ST, the Attribute, USE THIS TRAIT. Do not use the normal attribute version unless we have verified you have increased its cost manually in your sheet. ST for Liberi costs 20% more than normal.",
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TiXLD5c1QrbAkGjui",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tBl-vdvjxCrfuOWHE",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t5D4nXKgejnaua22T"
+					},
+					"name": "Cultural Adaptability",
+					"reference": "B46",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mY_1ZHKOUJukn_TGL",
+							"name": "Xeno",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mgSxkn-Lk_Wz959Ja",
+							"name": "Liberi Adaptability",
+							"cost": -10,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tl4yR8YcCCgLWVRw9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tM6z7Mx6e2V4VvUR4"
+					},
+					"name": "Absolute Direction",
+					"reference": "B34",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mbmWSrOUbcXwlbDEz",
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mGlnMKpIBIAikFFpQ",
+							"name": "Liberi Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mXi2t9tLlpqvvr3OM",
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost": 5,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									},
+									"amount": 2
+								}
+							],
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							},
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "txeDTbuSr4VLe-Iki",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tOl20TXr9KKkV5FRy"
+					},
+					"name": "Enhanced Tracking (Liberi)",
+					"reference": "B53,P49",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mY6pBSN37mwcYNu03",
+							"name": "Multiple Lock-Ons",
+							"reference": "P49",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mXQOmS0klJS0NRKV9",
+							"name": "Liberi Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tEBS3evl152zPPjwY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tZw_ze3n_bPxiK86s"
+					},
+					"name": "Terrain Adaptation (@Terrain Type@)",
+					"reference": "B93,P83",
+					"local_notes": "You're adapted to one type of terrain based on your Liberi heritage. Choose one that fits your homeland.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mRf65kY8CBKZ30MNm",
+							"name": "Unstable on solid ground",
+							"reference": "B93",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mR3X_d5SxAwkNuF2J",
+							"name": "Liberi Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "m1w2O47wC-wxDOlqX",
+							"name": "Active",
+							"reference": "P84",
+							"cost": 300,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "T9PpV_k_C1nU-5aai",
+			"name": "Racial Disadvantages",
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

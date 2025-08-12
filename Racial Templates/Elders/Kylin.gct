@@ -1,0 +1,489 @@
+{
+	"version": 5,
+	"id": "BVkXbmLYMnVbMg0Iy",
+	"traits": [
+		{
+			"id": "T2iS5a3TA0PE2VF9D",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tedJCC0hQRErDdOa_",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tdQyFaGNggtI4kz7B",
+					"name": "Kylin Physiology",
+					"local_notes": "As an Elafian, you naturally possess greater fitness and dexterity. You may purchase DX and HT at a lower cost than normal. You are also naturally more fit and can right yourself quickly, though you lose the antlers that are often good for striking. However, they require maintenance that others might not require. Additionally, you're able to purchase Magery at a significantly reduced cost, your Arts known far and wide. ",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TvHcSv2ezL6w9wQOn",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tVsWav0I1m4XpPA3O",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSv_wTFThILN-4rlX"
+					},
+					"name": "Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "muRDnnK6OvlKCAANb",
+							"name": "Kuranta, Elafia, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape. This comes for free on Kuranta!",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "m2D7RhV1iAAaIu4jP",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3T6MgVsuZlOa2lGx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t2uxXuNNQjGUAFAd0"
+					},
+					"name": "Perfect Balance",
+					"reference": "B74",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mI3IAfX6_8qIq5Kf4",
+							"name": "Elafian Physiology",
+							"cost": -15,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "on DX and DX-based skill rolls to keep your feet or avoid being knocked down in combat",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on all rolls to keep your feet if the surface is wet, slippery or unstable",
+							"amount": 6
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "piloting"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "acrobatics"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "aerobatics"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "aquabatics"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "climbing"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3pyVIWlkx7lVHdeu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "teVkdoeyqvv4QStNk"
+					},
+					"name": "Kylin Heritage",
+					"reference": "B77",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mVwgT5PklkEYV3erl",
+							"name": "Kylin Arts",
+							"local_notes": "Your capabilities trend towards lightning Arts. You possess a unique talent for them, and may ignore prerequisites for any spell that deals with lightning or electricity. You also add this Advantage's level (for each beyond 0) to any spell that fits this description.",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 10,
+					"points_per_level": 10,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tNb9JgNA4KeuR0qpy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mN-edydDJEGwpDHyv",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mAu1M3wMQNKwdjo9a",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"id": "musY4bEF3fe3s5V25",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost": -20,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m3caH3JUFVbY99Giy",
+							"name": "Sankta Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only",
+							"disabled": true
+						},
+						{
+							"id": "mXZB2W42AS--8Z48M",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mUefnOXxC-_YlevYZ",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m3gbp5u9Yc9yCdEJT",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mVatATYLnOwBlIv8g",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m4_inNoYqugBMrJE-",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mhobjX9AdETTuvf9j",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mZbSlto4gb3i7Mwb4",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4,
+							"leveled": true
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "T5TcxwzW_8bH6OJjU",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tt41pmsTXspqq1Sgs",
+					"name": "Antler Maintenance",
+					"local_notes": "Your antlers or ossicones require care. You must spend at least an hour every day tending to your antlers carefully, usually done right before bed, or right after awakening. This takes up not only time, but effort, meaning you struggle to perform tasks during this time. You take a -2 to Per during this time, alongside any other task not related to tending your antlers.\n\nIf you fail to do so during a given day, the next day, you take a -2 to Per and must tend to your antlers or ossicones the next day properly. This penalty increases by -1 for every day you fail to do so, as your antlers continue to accrue more irritants.",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "t21ItI7PWUZG4ZL2X",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tM8LVZ-8-HpvEFsPi"
+					},
+					"name": "Incurious",
+					"reference": "B140",
+					"local_notes": "Make a self-control roll when confronted with something strange. If you fail, you ignore it!",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to new things",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tKSRgrwok44x1xnQv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t_ZUyO0Xhmi2p0Vku"
+					},
+					"name": "Unnatural Features (Antlers \u0026 Tail)",
+					"reference": "B22",
+					"local_notes": "Your particular form of antlers and tail make it a struggle to conceal yourself in a crowd, and many people know of your status as an Elder regardless.",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"points_per_level": -1,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							},
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							},
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": -1
+					}
+				}
+			],
+			"calc": {
+				"points": -11
+			}
+		}
+	]
+}

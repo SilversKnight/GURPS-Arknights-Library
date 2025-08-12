@@ -1,0 +1,410 @@
+{
+	"version": 5,
+	"id": "B8jLVoeqDmY3pZ-SB",
+	"traits": [
+		{
+			"id": "Ti3WFsNx3Sb5Ps7kX",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "t7VZIfauay7PhInua",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tsW3ejnTNG8zpzCYn",
+					"name": "Phidia Physiology",
+					"local_notes": "As a Phidia, your affinity does not lie in brute strength, and instead in dexterous actions. You may purchase dexterity at a reduced cost, alongside health. However, you possess a stigma around you for being a 'snake;' liars, cheats, manipulators. However, you possess exceptionally keen senses, and are also known to be explicitly devoted to singular tasks and goals over long periods of time. You can really dedicate yourself if you wish to.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "T64NHnNF7cvsjvvug",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "t7ymf6e0TDBxuz5yB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tc74I5tb8McOGp5nr"
+					},
+					"name": "Peripheral Vision",
+					"reference": "B74,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m_Esb3tPqelTqe9Ve",
+							"name": "Easy to Hit",
+							"reference": "B75",
+							"local_notes": "Others can target your eyes at only -6 to hit",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m8py_gRLQUWUVPUmB",
+							"name": "Phidia Senses",
+							"local_notes": "You have a unique affinity for keeping track of your peripherals. You rarely let things go unnoticed.",
+							"cost": -15,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tv2LSTf-GE52if7mB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tUzmcuTXRq35xQ-rB"
+					},
+					"name": "Single-Minded",
+					"reference": "B85",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "miDZGwSdJ6ScinG1Y",
+							"name": "Phidia Concentration",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to rolls for any lengthy mental task you concentrate on to the exclusion of other activities, if the GM feels such focus would be beneficial",
+							"amount": 3
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to all rolls to notice interruptions while obsessed with a task",
+							"amount": -5
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tbBzIXN8FmALeNUmV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "ta7LDTJnsrxUu_hpV"
+					},
+					"name": "Flexibility",
+					"reference": "B56,MA44",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "me5B4pUgPZ8CLOQnT",
+							"name": "Phidia Flexibility",
+							"cost": -5,
+							"cost_type": "points"
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "climbing"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "escape"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "erotic art"
+							},
+							"amount": 3
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "in penalties may be ignored when due to close quarters",
+							"amount": -3
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tCjI_18H53RzAAc47",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tAZ31tXG_HzDmVCRp"
+					},
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tl3zFNdYj86oAvj55",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tkdGzhkqoMAQbknEc"
+					},
+					"name": "Acute Vision",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "vision",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "TnnvqLzI8xLeYxqUx",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tUYQoZVtCSECdzZHK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSSmnBdJ1f7mFMRL5"
+					},
+					"name": "Social Stigma (Phidia)",
+					"reference": "B155",
+					"local_notes": "Your race has been associated in ancient times with stereotypes of slyness, guile, and manipulation, alongside your keen senses having given your race a perception of emotionally unstable. Because of this, everyone reacts to you with a bit of hesitance, aside from other Phidia, or other individuals who are similarly marginalized for other misconceptions.",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"modifiers": [
+						{
+							"id": "mWbVdOKMzuPxK1MrG",
+							"name": "Obvious from your appearance, dress or manner",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who sees you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mXQOQDFUQXFJnNvse",
+							"name": "Obvious from your speech",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who hears you speak",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mlXjOTGraM0eiYZpF",
+							"name": "Easily learned by anyone who cares to check up on you",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who cares to check up on you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mQz_chQCnceOV4kcJ",
+							"name": "Public Denouncement",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from everryone you meet",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						}
+					],
+					"points_per_level": -5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tccnVfaIgce9c8CMs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tfAsq381OPUDZf5yE"
+					},
+					"name": "@Obsession OR Compulsive Behavior@",
+					"reference": "B164",
+					"local_notes": "@(Your Obsession or Compulsive Behavior; Minor)@",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		}
+	]
+}

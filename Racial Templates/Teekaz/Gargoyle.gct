@@ -1,0 +1,1043 @@
+{
+	"version": 5,
+	"id": "BQA-sUKdJcPD_Wg65",
+	"traits": [
+		{
+			"id": "T3TLZn9pGA98_PMC7",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "t88DpRV53u2pTLahC",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t8IyHD8gRIkE9E1ev",
+					"name": "Gargoyle Physiology",
+					"local_notes": "Gargoyles are known for many things, not least of which being their inherent Arts, and their affinity for physical prowess. However, Gargoyles are occasionally known for being stockier, and thereby, a tad clumsier than some of their leaner kin. Gargoyles gain a significant reduction in cost for health and a minor reduction in strength, but a cost increase for dexterity. Additionally, they have unique Arts and spend less on them than most, alongside possessing a unique form of damage resistance that others don't in the form of their barrier.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tDTZ7NcRACOH3zBk2",
+					"name": "Gargoyle Dexterity",
+					"local_notes": "When purchasing DX, the Attribute, USE THIS TRAIT. Do not use the normal attribute version unless we have verified you have increased its cost manually in your sheet. DX for Gargoyles costs 20% more than normal.",
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TwRkGpEE33cBefpfv",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "toB9MZTIg9akNCPI8",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tomtizhlGBPNSt-cY"
+					},
+					"name": "Damage Resistance (Gargoyle Arts)",
+					"reference": "B47,P45,MA43,PSI14",
+					"local_notes": "You've either studied with, or have an affinity for, Gargoyle Arts. This gives a temporary shield against foes that you can activate. You may continue to add limitations as you please, so long as they are legal under the normal boundaries, and can replace 'Semi-Ablative' for 'Ablative.'",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mMJQbZoo6I4B73Ro9",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20
+						},
+						{
+							"id": "mObzu6vpSsnyNT-sH",
+							"name": "Gargoyle Arts",
+							"cost": -20,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "mooFI15xsco-N6FTB",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1
+						},
+						{
+							"id": "mzwverecZgpbFtASM",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m-TpZyZ9wVFUXeWIg",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m3ZE6iidr8wxcHNwR",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m8IbhmIkWy3ElP_Zh",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mScr6aTNA46OwV2il",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mDzDmt-VI56D-qz3A",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mhOvJVXV18BGznfJU",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mmO0hQOwQJnoHODfZ",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "m8dxhLsHZGZpP6iKf",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mRy5_TFe449CgPKXq",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mesdOmVQfIctf7E8c",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mVhAr33DpDhCP3QF7",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20
+						},
+						{
+							"id": "mpq9Fut9c_ZbQK8A4",
+							"name": "Gargoyle Arts",
+							"local_notes": "You are a Gargoyle, and have a distinct affinity for these Arts.",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mef3IX0E1vXi9g1ao",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mUCaR7QKuJ1VMkwDh",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mOQXSkz1czh7z77Js",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mP3NaS0szB4IKlC1w",
+							"name": "Tough Skin",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mt6CMveZJkl2_BC-8",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mLSfKWJeQ4f4Uljsn",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mMH0KokUCIbmGxyV4",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "m7nGR2_9ixZPiJUa-",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mXWQQlgR1g55T8b-W",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mzhnAHEmVsNv7cxjr",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mvL04nsZXV9Pnt4aW",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"neck"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"tail"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"wing"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"fin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"brain"
+							],
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 4,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tWZFou5bWlgzdxpzb",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mRc9R3kZZsMANspA1",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mpuUlk90pra0AmHhO",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m9jDV2YSkwjYmImuW",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost": -20,
+							"affects": "levels_only"
+						},
+						{
+							"id": "ms8ItHOLuE_lywMbf",
+							"name": "Sarkaz Arts",
+							"local_notes": "You begin with level 0 Magery for free.",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only"
+						},
+						{
+							"id": "m2sM9S_X1AVkpegae",
+							"name": "Sankta Arts",
+							"cost": -5,
+							"cost_type": "points",
+							"affects": "base_only",
+							"disabled": true
+						},
+						{
+							"id": "mPGT-rlGs1Ahk_Peo",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "maphizyhlqU6iWn1m",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mOGy_j6yitqoNs5hR",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mdP7rdCdQHXDL5Fdv",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "moL7iCcxEVVaA3aOo",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m_7746dsLqX_y2L-B",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mRd_dsyIHS1Hl5dxL",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4,
+							"leveled": true
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqP58Hvhy8ijQwf4k",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "teVkdoeyqvv4QStNk"
+					},
+					"name": "Gargoyle Heritage",
+					"reference": "B77",
+					"local_notes": "You gain a bonus when casting spells that deal in manipulating the earth, or enhancing your body with earth, or turning it into stone or metallic materials. You also may ignore prerequisites in regards to these spells (GM discretion), starting from level 0.",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tnBgDYNZWJGS7mT9d",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t4wDTpXzFtP1yT7BF"
+					},
+					"name": "Sarkaz Ritual of @One of Strength, Dexterity, or Health@",
+					"reference": "B41",
+					"local_notes": "Once per game session, you may add 1d to @One of Strength, Dexterity, or Health@, which lasts 3d seconds due to being attuned with the Myriad Souls.",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tY6_UOb7jn8gWNWP4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSv_wTFThILN-4rlX"
+					},
+					"name": "Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mpmBHUEGTNZHkn7OZ",
+							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape. This comes for free on Kuranta!",
+							"cost": -100,
+							"disabled": true
+						},
+						{
+							"id": "mL9-XQw3T5H0A07NE",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "toFpYGU0BLKQejd51",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tJTfFdHM7YI5IZR7I"
+					},
+					"name": "Sarkaz Resistance",
+					"reference": "B81,P71,MA47",
+					"local_notes": "You may choose any Common source to gain a strong resistance to. This could include all toxins, sicknesses, and similar, though this will not apply against Oripathy.",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "matH1M8dwvK8A_Kr-",
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost": 30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mH704uwAFM7P-CqH2",
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost": 15,
+							"cost_type": "points"
+						},
+						{
+							"id": "mwQZUZPLWZBIq8QDw",
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mhR-QT5we7YGoAHIu",
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mffcTVZD-JXhkYwKT",
+							"name": "Immunity",
+							"reference": "B81",
+							"cost": 1,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "mEYDZxHb2iNbWB2Ti",
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost": 0.5,
+							"cost_type": "multiplier"
+						},
+						{
+							"id": "m0xG-WcEiVnPLasN7",
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost": 0.33,
+							"cost_type": "multiplier",
+							"disabled": true
+						}
+					],
+					"round_down": true,
+					"calc": {
+						"points": 7
+					}
+				},
+				{
+					"id": "tOkGMUPSU6zG4EiPs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tjftBnelz1fSAUymc"
+					},
+					"name": "Striking ST (Terran)",
+					"reference": "B65,P58",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mfs6STiyZuU3_1yuS",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mdtlNTgR-K6xuN1eJ",
+							"name": "Archosauria, Cyclops, Durin, Gargoyle, Forte, ",
+							"cost": -20
+						},
+						{
+							"id": "mTZMpdDMbo4kIXxud",
+							"name": "Goliath, Oni, Ursine, Vouivre Physiology",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mgsqf83TEfjd99kpY",
+							"name": " Anaty, Anura, Liberi, Sankta, Vulpo, Zalak Physiology",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "m-Z7xZXj5V9CQ_O6Q",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m_IhdZJXFgR6EOKtG",
+							"name": "Super-Effort",
+							"reference": "P58",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "m3rxeRbAxisPU4Wgx",
+							"name": "Know Your Own Strength Variant Price",
+							"reference": "PY83:18",
+							"cost": 4,
+							"cost_type": "points",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "moerCspgmyEdUHdcQ",
+							"name": "@Limb@ Grip ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						},
+						{
+							"id": "mcpOgcW4wKszWiylC",
+							"name": "Bite ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "striking_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 4
+					}
+				}
+			],
+			"calc": {
+				"points": 36
+			}
+		},
+		{
+			"id": "TVYJnfCddMJNosbtD",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tlixySYdFnwo_Q-zg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSSmnBdJ1f7mFMRL5"
+					},
+					"name": "Social Stigma (Sarkaz)",
+					"reference": "B155",
+					"local_notes": "You aren't welcomed readily by most communities. Disguising yourself, while not impossible, is rarely a permanent solution to the problem.",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"modifiers": [
+						{
+							"id": "mZ7sOTMz9lnK5O6Ou",
+							"name": "Obvious from your appearance, dress or manner",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who sees you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m2OarJS8fGwtpXLIU",
+							"name": "Obvious from your speech",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who hears you speak",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mmKt9YSzjmj8NbLWz",
+							"name": "Easily learned by anyone who cares to check up on you",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who cares to check up on you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "msIEZm_p-DRrRuvj0",
+							"name": "Public Denouncement",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from everryone you meet",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						}
+					],
+					"points_per_level": -5,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "tbs1Td_zcqnIbyMnp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tkH3Z500lfDbdUbtv"
+					},
+					"name": "Phantom Voices",
+					"reference": "B148",
+					"local_notes": "In any situation that the GM feels is stressful, he may roll 3d. On a 6 or less, you hear voices. The GM will always roll whenever you miss a Fright Check or make the roll exactly, and whenever you fail a self-control roll for another stress-related disadvantage.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mio_UlEGfz3idEg35",
+							"name": "Annoying",
+							"reference": "B148",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "m7fH_W45rqSQXRCrf",
+							"name": "Disturbing",
+							"reference": "B148",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "meQEHemBe_OhI5v6z",
+							"name": "Diabolical",
+							"reference": "B148",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tXl0rZJbZEWyEOKTi",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tM8LVZ-8-HpvEFsPi"
+					},
+					"name": "Incurious",
+					"reference": "B140",
+					"local_notes": "Make a self-control roll when confronted with something strange. If you fail, you ignore it!",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to new things",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "t58DTgK3wsLnNqAO_",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tFVCzZZ1e01Fvormg"
+					},
+					"name": "Oripathy: Resistance",
+					"local_notes": "Determines your resistance to Oripathy. You will be expected to keep track of your Oripathy Resistance value (default equal to triple your HT score). Whenever you miss a Dosage of Suppressant, roll a HT roll at each interval. If failed, you reduce your resistance by one point (or by two on a 17 or 18 on the dice!), on top of the lost HP.\n\nIf you were at Stage I, you progress to Stage II automatically upon your resistance equalling half of your Resistance score. (beginning at Stage II starts you at this point!).\n\nIf you reach one quarter of your resistance score, you progress to Stage III, and your Dosage requirement goes up by one step. You gain no additional points from this.\n\nFurthermore, your Oripathy may begin to worsen regardless of treatment at Stage III. Everyday that causes pain due to your Oripathy also reduces your Resistance value as if you failed normally.\n\nBeing in a Catastrophe, or other areas with high Originium concentration might also cause your Resistance to falter. The GM will often call for a HT roll, unless not applicable due to excessive concentration.\n\nYou may alter your resistance with the modifiers on this Trait further, weakening or strengthening them, depending on your character's physiologies. Some people are 'built different!'\n\nAdditionally, if your HT score ever rises during play, you may restore one point of Resistance for every point your HT rises, representing you keeping in good practice to fend off your condition.",
+					"modifiers": [
+						{
+							"id": "m3nfzxdWiTXLWplkG",
+							"name": "Susceptible",
+							"local_notes": "Contracting Oripathy for you is, unfortunately, easier. If the GM ever rolls, or asks you to roll, against your HT value to determine if you contract Oripathy, you take a -4 to your HT for determining whether you contract it.\n\nAdditionally, if you do contract Oripathy, your resistance is lowered from the normal value (2x your HT score), though your progression between each stage of Oripathy changes to reflect your new value.\n\nYou may also never gain resistance to Oripathy-related circumstances outside of external equipment, and your innate Resistance does not apply to Oripathy-related scenarios.\n",
+							"cost": -10,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -35
+			}
+		}
+	]
+}

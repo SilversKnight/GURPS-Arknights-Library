@@ -1,0 +1,5277 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "emYjpEpAnH_5B_7vD",
+			"description": "Firearm (Small)",
+			"local_notes": "Encompasses low-caliber weapons, eq: pistols, revolvers, small bore carbines, submachine guns, etc.\nIt is considered an arts unit.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Firearms"
+			],
+			"base_value": "700",
+			"base_weight": "2.8 lb",
+			"weapons": [
+				{
+					"id": "WbCetwu-zRCmg2OiW",
+					"damage": {
+						"type": "pi-",
+						"base": "2d",
+						"armor_divisor": 1.25
+					},
+					"strength": "9",
+					"accuracy": "2",
+					"range": "60/600",
+					"rate_of_fire": "1/1",
+					"shots": "9+1(3)",
+					"bulk": "-2",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Small"
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Medium",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Heavy",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Huge",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Artillery",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "2d(1.25) pi-"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fBKexip2_TFYzt9h9",
+					"name": "Arts Catalyst Improvement 1",
+					"local_notes": "Armor division +5%;\n+1 Recoil",
+					"cost": "+200%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fvVNp2ewFWDJjvDCy",
+					"name": "Arts Catalyst Improvement 2",
+					"local_notes": "Armor division +10%;\n+1 Recoil",
+					"cost": "+400%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fGMSYv7cmgdYQkpQ5",
+					"name": "Arts Catalyst Improvement 3",
+					"local_notes": "Armor division +15%;\n+2 Recoil",
+					"cost": "+600%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fEF0ru_H5wZJtfyk_",
+					"name": "Arts Catalyst Improvement 4",
+					"local_notes": "Armor division +20%;\n+2 Recoil",
+					"cost": "+800%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f7TlE4e_26rLOmhv2",
+					"name": "Arts Catalyst Improvement 5",
+					"local_notes": "Armor division +25%;\n+3 Recoil",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fVIDvHBhUo1xfl1IW",
+					"name": "Reduced Magazine 1",
+					"local_notes": "Non-chamber shots -5;\nBulk +1",
+					"weight_type": "to_base_weight",
+					"cost": "-10%",
+					"weight": "-0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f3GYHfiHFGmhL_-QP",
+					"name": "Extended Magazine 1",
+					"local_notes": "Non-chamber shots +5;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f_A0ZMuY34bQYwSkD",
+					"name": "Extended Magazine 2",
+					"local_notes": "Non-chamber shots +10;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "+0.4 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fKXvCYPfgv2cY7B5V",
+					"name": "Extended Magazine 3",
+					"local_notes": "Non-chamber shots +15;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fyJFixeB7u8nkFYL3",
+					"name": "Extended Magazine 4",
+					"local_notes": "Non-chamber shots +20;\nBulk -2",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f1B4pvuTVvUCC8iEj",
+					"name": "Extended Magazine 5",
+					"local_notes": "Non-chamber shots +25;\nBulk -2",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fPURag1cL2_IfAzyQ",
+					"name": "Foregrip Attachment",
+					"local_notes": "Reduces recoil by -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fjfzSDd5LltoqLv8e",
+					"name": "Scope Attachment",
+					"local_notes": "Scope accuracy +2;\nHalf-range damage modifier +30%;\nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_scope_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fYIIHKo0mIpvbieHY",
+					"name": "Sight Attachment 1",
+					"local_notes": "Weapon accuracy +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fxnf2bH3BGKVG79b1",
+					"name": "Sight Attachment 2",
+					"local_notes": "Weapon accuracy +2;",
+					"weight_type": "to_base_weight",
+					"cost": "+160%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fqa72Le9mMYb98Sg4",
+					"name": "Sight Attachment 3",
+					"local_notes": "Weapon accuracy +3;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fHUC-JHJJDCiUaW2S",
+					"name": "Sight Attachment 4",
+					"local_notes": "Weapon accuracy +4;",
+					"weight_type": "to_base_weight",
+					"cost": "+320%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 4,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f6kFHMeR63kcb0hNn",
+					"name": "Sight Attachment 5",
+					"local_notes": "Weapon accuracy +5;",
+					"weight_type": "to_base_weight",
+					"cost": "+400%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fhmK_iEW4OkyJved_",
+					"name": "Supressor 1",
+					"local_notes": "Hearing -1; \nHalf-damage range and max range -20%; \nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fe6zOPk0i_dpiTLj_",
+					"name": "Supressor 2",
+					"local_notes": "Hearing -2; \nHalf-damage range and max range -20%; \nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fcGx_65aC5F7aK_38",
+					"name": "Supressor 3",
+					"local_notes": "Hearing -3; \nHalf-damage range and max range -40%; \nBulk -1;\nDamage -2",
+					"weight_type": "to_base_weight",
+					"cost": "+360%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f6tOtaMuHNQzoR-_X",
+					"name": "Supressor 4",
+					"local_notes": "Hearing -4; \nHalf-damage range and max range -40%; \nBulk -1;\nDamage -2",
+					"weight_type": "to_base_weight",
+					"cost": "+500%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fcxtz0pp2Jk3m8FRs",
+					"name": "Automatic Firearm Mode Design 1",
+					"local_notes": "Shoots per attack +1;\nAccuracy -2;\nRecoil +1;\nMinimum ST +1",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fF0wNqbUJYqge07d6",
+					"name": "Automatic Firearm Mode Design 2",
+					"local_notes": "Shoots per attack +2;\nAccuracy -4;\nRecoil +2;\nMinimum ST +2",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+400%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f1nqvw_TL7Y9YxmNY",
+					"name": "Long Barrel",
+					"local_notes": "Half-damage range +30%;\nMax range +30%;\nBulk -1;\nMinimum ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "ffd1ho_PmrNsNFWh3",
+					"name": "Arts Charger",
+					"local_notes": "Gunner may concentrate for one turn, spending 1 FP.\nOn the next attack, the gunner may shoot only once, applying an extra 1d damage;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"disabled": true
+				},
+				{
+					"id": "feW4b2eoyHbBVy-z1",
+					"name": "Spreadshot",
+					"local_notes": "RoF set to 3x6;\nEffective ST -6;\nBulk -1;\nRange and Half Damage range -90%;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+300%",
+					"weight": "+1.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_effective_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -6
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_rof_mode_1_secondary_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fzL_1yC-eBkvCdXek",
+					"name": "Single Bullet Reload",
+					"local_notes": "Sets bullets per reload to 1\nSets reload time to 1 turn",
+					"cost": "-20%",
+					"weight": "-0.2 lb",
+					"disabled": true
+				},
+				{
+					"id": "fj0IMGk_VvH5SlU8a",
+					"name": "Shortened Barrel",
+					"local_notes": "Range and Half Damage range -20%;\nRequired ST -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "-0.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fwvbg-dAfe3lLkoiL",
+					"name": "Lightweight Polymers",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "x80%",
+					"disabled": true
+				},
+				{
+					"id": "fAx95XxuxczBIfYZa",
+					"name": "Ergonomic Design 1",
+					"local_notes": "Bulk +1;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+100%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f4Tib8hfvke7FfBAd",
+					"name": "Ergonomic Design 2",
+					"local_notes": "Bulk +2;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fGXcUpXZFsFO-fgIb",
+					"name": "Ergonomic Design 3",
+					"local_notes": "Bulk +3;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+300%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f3qggLYm8nLnR95-F",
+					"name": "Extra Barrel",
+					"local_notes": "Shots per Attack +1\nAccuracy -4\nBulk -2\nMinimum ST +2",
+					"cost": "+500%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "ffzUHm2VVpDdtr-2L",
+					"name": "Higher Calliber",
+					"local_notes": "Changes damage type to pi. \nRequires manual change on the equipment.",
+					"cost": "+500%",
+					"weight": "+1 lb",
+					"disabled": true
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 700,
+				"extended_value": 700,
+				"weight": "2.8 lb",
+				"extended_weight": "2.8 lb"
+			}
+		},
+		{
+			"id": "eB0UwQ_S_GUAeoQjk",
+			"description": "Firearm (Medium)",
+			"local_notes": "Encompasses medium-caliber weapons, eq: assault rifles, carbines, light machine guns, sniper rifles.\nIt is considered an arts unit.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Firearms"
+			],
+			"base_value": "1400",
+			"base_weight": "6.5 lb",
+			"weapons": [
+				{
+					"id": "W6P-93kXpGIVKc-8i",
+					"damage": {
+						"type": "pi",
+						"base": "2d+3",
+						"armor_divisor": 1.3
+					},
+					"strength": "10†",
+					"accuracy": "2",
+					"range": "90/900",
+					"rate_of_fire": "1/1",
+					"shots": "9+1(3)",
+					"bulk": "-3",
+					"recoil": "3",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Small",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Medium"
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Heavy",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Huge",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Artillery",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "2d+3(1.3) pi"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fadmJVP8OPdEM8YqG",
+					"name": "Arts Catalyst Improvement 1",
+					"local_notes": "Armor division +5%;\n+1 Recoil",
+					"cost": "+200%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fR-i779bIj0GJZcFL",
+					"name": "Arts Catalyst Improvement 2",
+					"local_notes": "Armor division +10%;\n+1 Recoil",
+					"cost": "+400%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fOBv0wP5Aqoczigtl",
+					"name": "Arts Catalyst Improvement 3",
+					"local_notes": "Armor division +15%;\n+2 Recoil",
+					"cost": "+600%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "feRm4JVF1KIMT6cQN",
+					"name": "Arts Catalyst Improvement 4",
+					"local_notes": "Armor division +20%;\n+2 Recoil",
+					"cost": "+800%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fYtYw8zK0j6-GeNZH",
+					"name": "Arts Catalyst Improvement 5",
+					"local_notes": "Armor division +25%;\n+3 Recoil",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fkW3R79_sgonKJNh_",
+					"name": "Arts Catalyst Improvement 5",
+					"local_notes": "Armor division per level +25%;\nRecoil per level +3",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fSj-AFYWIMjjpR-Kg",
+					"name": "Reduced Magazine 1",
+					"local_notes": "Non-chamber shots -5;\nBulk +1",
+					"weight_type": "to_base_weight",
+					"cost": "-10%",
+					"weight": "-0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f5hs9Qva9og50etJW",
+					"name": "Extended Magazine 1",
+					"local_notes": "Non-chamber shots +5;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fJ0wYHyKrefX2L43i",
+					"name": "Extended Magazine 2",
+					"local_notes": "Non-chamber shots +10;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "+0.4 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fX5dawEhBfFeV_K91",
+					"name": "Extended Magazine 3",
+					"local_notes": "Non-chamber shots +15;\nBulk -1",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fujsAXne2sGrXYABb",
+					"name": "Extended Magazine 4",
+					"local_notes": "Non-chamber shots +20;\nBulk -2",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fgyD1nSoLDB2MXmb1",
+					"name": "Extended Magazine 5",
+					"local_notes": "Non-chamber shots +25;\nBulk -2",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fvPhBOimbK66AQi9I",
+					"name": "Box Magazine",
+					"local_notes": "Non-chamber shots +90;\nBulk -4\nReload +2",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_reload_time_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fIsbge9kCIPF1ezjf",
+					"name": "Bipod Attachment",
+					"local_notes": "Reduces recoil by -1\n(B412 for Bipod and Tripod rules)",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fdIo4FQL-E0rf34wo",
+					"name": "Foregrip Attachment",
+					"local_notes": "Reduces recoil by -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fSXOYyu2lNJsVD89C",
+					"name": "Scope Attachment",
+					"local_notes": "Scope accuracy +2;\nHalf-range damage modifier +30%;\nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_scope_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fSXdln9m25Cpp9kmo",
+					"name": "Sight Attachment 1",
+					"local_notes": "Weapon accuracy +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fhKPsQoopXxWz_P3O",
+					"name": "Sight Attachment 2",
+					"local_notes": "Weapon accuracy +2;",
+					"weight_type": "to_base_weight",
+					"cost": "+160%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fKInnJ2fViIkWIVjd",
+					"name": "Sight Attachment 3",
+					"local_notes": "Weapon accuracy +3;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fbMOV71l8j5MYPDp3",
+					"name": "Sight Attachment 4",
+					"local_notes": "Weapon accuracy +4;",
+					"weight_type": "to_base_weight",
+					"cost": "+320%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 4,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0O2DvMPEIZw-PuJw",
+					"name": "Sight Attachment 5",
+					"local_notes": "Weapon accuracy +5;",
+					"weight_type": "to_base_weight",
+					"cost": "+400%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fYSjS_Ke8gGqmcJcq",
+					"name": "Supressor 1",
+					"local_notes": "Hearing -1; \nHalf-damage range and max range -20%; \nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fjP2t8tAgz5SXxdcc",
+					"name": "Supressor 2",
+					"local_notes": "Hearing -2; \nHalf-damage range and max range -20%; \nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fm0KdHCT8kk7pPaxV",
+					"name": "Supressor 3",
+					"local_notes": "Hearing -3; \nHalf-damage range and max range -40%; \nBulk -1;\nDamage -2",
+					"weight_type": "to_base_weight",
+					"cost": "+360%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fKnmbLIj4tmcs8g-h",
+					"name": "Supressor 4",
+					"local_notes": "Hearing -4; \nHalf-damage range and max range -40%; \nBulk -1;\nDamage -2",
+					"weight_type": "to_base_weight",
+					"cost": "+500%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -40
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fxIpIR_oqYM1ynTLl",
+					"name": "Automatic Firearm Mode Design 1",
+					"local_notes": "Shoots per attack +1;\nAccuracy -2;\nRecoil +1;\nMinimum ST +1",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f5VHq9piuk4D-muRh",
+					"name": "Automatic Firearm Mode Design 2",
+					"local_notes": "Shoots per attack +2;\nAccuracy -4;\nRecoil +2;\nMinimum ST +2",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+400%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fHyQ_CAi0B7zG5Eov",
+					"name": "Long Barrel",
+					"local_notes": "Half-damage range +30%;\nMax range +30%;\nBulk -1;\nMinimum ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fiq3sySz0YIhGsBwC",
+					"name": "Arts Charger",
+					"local_notes": "Gunner may concentrate for one turn, spending 1 FP.\nOn the next attack, the gunner may shoot only once, applying an extra 1d damage;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"disabled": true
+				},
+				{
+					"id": "fr5ROWEKM8gZJYEqe",
+					"name": "Spreadshot",
+					"local_notes": "RoF set to 3x6;\nEffective ST -6;\nBulk -1;\nRange and Half Damage range -90%;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+300%",
+					"weight": "+1.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_effective_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -6
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_rof_mode_1_secondary_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f5bR8MQaPrdjQZFKT",
+					"name": "Single Bullet Reload",
+					"local_notes": "Sets bullets per reload to 1\nSets reload time to 1 turn",
+					"cost": "-20%",
+					"weight": "-0.2 lb",
+					"disabled": true
+				},
+				{
+					"id": "fSIgjiuwrgwQD6HVj",
+					"name": "Shortened Barrel",
+					"local_notes": "Range and Half Damage range -20%;\nRequired ST -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "-0.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f93-neVeJcxV1Sj5L",
+					"name": "Lightweight Polymers",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "x80%",
+					"disabled": true
+				},
+				{
+					"id": "f5obKWhZdGCMEIC8z",
+					"name": "Ergonomic Design 1",
+					"local_notes": "Bulk +1;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+100%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fLn3tgm4SWYGpXtbZ",
+					"name": "Ergonomic Design 2",
+					"local_notes": "Bulk +2;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fiwxxaTzIfd0ywt-m",
+					"name": "Ergonomic Design 3",
+					"local_notes": "Bulk +3;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+300%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fIlBi4iwg-_hRNY3l",
+					"name": "Extra Barrel",
+					"local_notes": "Shots per Attack +1\nAccuracy -4\nBulk -2\nMinimum ST +2",
+					"cost": "+500%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1400,
+				"extended_value": 1400,
+				"weight": "6.5 lb",
+				"extended_weight": "6.5 lb"
+			}
+		},
+		{
+			"id": "ed-27LM2KvQ5em-Sl",
+			"description": "Firearm (Heavy)",
+			"local_notes": "Encompasses heavy-caliber weapons, eq: heavy machine guns, anti material sniper rifles.\nIt is considered an arts unit.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Firearms"
+			],
+			"base_value": "2500",
+			"base_weight": "9 lb",
+			"weapons": [
+				{
+					"id": "WMwI8TmxIJDQpTYKf",
+					"damage": {
+						"type": "pi+",
+						"base": "2d+3",
+						"armor_divisor": 1.35
+					},
+					"strength": "11†",
+					"accuracy": "2",
+					"range": "100/1,000",
+					"rate_of_fire": "1/1",
+					"shots": "9+1(3)",
+					"bulk": "-4",
+					"recoil": "3",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Small",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Medium",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Heavy"
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Huge",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Artillery",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "2d+3(1.35) pi+"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "faiRaaEVpalbki8Wm",
+					"name": "Arts Catalyst Improvement 1",
+					"local_notes": "Armor division +5%;\n+1 Recoil",
+					"cost": "+200%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fGN8DElRFribOiSGj",
+					"name": "Arts Catalyst Improvement 2",
+					"local_notes": "Armor division +10%;\n+1 Recoil",
+					"cost": "+400%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fkGIEDKwDmTe7Gu9B",
+					"name": "Arts Catalyst Improvement 3",
+					"local_notes": "Armor division +15%;\n+2 Recoil",
+					"cost": "+600%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fWHwbCoIeO5-vHP7D",
+					"name": "Arts Catalyst Improvement 4",
+					"local_notes": "Armor division +20%;\n+2 Recoil",
+					"cost": "+800%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0rJuF5DuSXg5vK8u",
+					"name": "Arts Catalyst Improvement 5",
+					"local_notes": "Armor division +25%;\n+3 Recoil",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fgXyQH6ibDZcQIDTU",
+					"name": "Reduced Magazine 1",
+					"local_notes": "Non-chamber shots -5;\nBulk +1",
+					"weight_type": "to_base_weight",
+					"cost": "-10%",
+					"weight": "-0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fVdYMdQym196Z3-Ae",
+					"name": "Box Magazine",
+					"local_notes": "Non-chamber shots +90;\nBulk -4\nReload +2",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_reload_time_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fY0MGpqFXTegyTwcc",
+					"name": "Foregrip Attachment",
+					"local_notes": "Reduces recoil by -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fk5UDuaN0sfO8mdh4",
+					"name": "Bipod Attachment",
+					"local_notes": "Reduces recoil by -1\n(B412 for Bipod and Tripod rules)",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0KR9amTIzN5X5fKL",
+					"name": "Scope Attachment",
+					"local_notes": "Scope accuracy +2;\nHalf-range damage modifier +30%;\nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_scope_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fxa-0dOkSP80FTdZ4",
+					"name": "Improved Scope Attachment",
+					"local_notes": "Scope accuracy +3;\nHalf-range damage modifier +40%;\nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+150%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 40
+						},
+						{
+							"type": "weapon_scope_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fi1piWSE22oLCmy2D",
+					"name": "Sight Attachment 1",
+					"local_notes": "Weapon accuracy +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fs_YfIAT_sZYFJRBg",
+					"name": "Sight Attachment 2",
+					"local_notes": "Weapon accuracy +2;",
+					"weight_type": "to_base_weight",
+					"cost": "+160%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f4a_i2E-WhHAjOsmG",
+					"name": "Sight Attachment 3",
+					"local_notes": "Weapon accuracy +3;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fZlGNsa__7eTschZa",
+					"name": "Sight Attachment 4",
+					"local_notes": "Weapon accuracy +4;",
+					"weight_type": "to_base_weight",
+					"cost": "+320%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 4,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f2mWpYmGiZY1uEeFr",
+					"name": "Sight Attachment 5",
+					"local_notes": "Weapon accuracy +5;",
+					"weight_type": "to_base_weight",
+					"cost": "+400%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fUvwG5wTmjiGf0Z2r",
+					"name": "Automatic Firearm Mode Design 1",
+					"local_notes": "Shoots per attack +1;\nAccuracy -2;\nRecoil +1;\nMinimum ST +1",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fcxbM84R_w56Pajs3",
+					"name": "Automatic Firearm Mode Design 2",
+					"local_notes": "Shoots per attack +2;\nAccuracy -4;\nRecoil +2;\nMinimum ST +2",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+400%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fxcOJjAVv4xJsyRQn",
+					"name": "Automatic Firearm Mode Design 3",
+					"local_notes": "Shoots per attack +3;\nAccuracy -4;\nRecoil +2;\nMinimum ST +2",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+400%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fYmmbz_EB9__lmzw4",
+					"name": "Long Barrel",
+					"local_notes": "Half-damage range +30%;\nMax range +30%;\nBulk -1;\nMinimum ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fgmkc_MODw5rQczcL",
+					"name": "Arts Charger",
+					"local_notes": "Gunner may concentrate for one turn, spending 1 FP.\nOn the next attack, the gunner may shoot only once, applying an extra 1d damage;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"disabled": true
+				},
+				{
+					"id": "f14dCzUdKrkq-MCfZ",
+					"name": "Spreadshot",
+					"local_notes": "RoF set to 3x6;\nEffective ST -6;\nBulk -1;\nRange and Half Damage range -90%;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+300%",
+					"weight": "+1.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_effective_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -6
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_rof_mode_1_secondary_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0w9vCAkcTTNWvKVg",
+					"name": "Single Bullet Reload",
+					"local_notes": "Sets bullets per reload to 1\nSets reload time to 1 turn",
+					"cost": "-20%",
+					"weight": "-0.2 lb",
+					"disabled": true
+				},
+				{
+					"id": "fzg9tNdWbnp00Zejx",
+					"name": "Shortened Barrel",
+					"local_notes": "Range and Half Damage range -20%;\nRequired ST -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "-0.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fpFOGkhxfwDKGyyF6",
+					"name": "Lightweight Polymers",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "x80%",
+					"disabled": true
+				},
+				{
+					"id": "fFwCnDrz4aG6dl45d",
+					"name": "Ergonomic Design 1",
+					"local_notes": "Bulk +1;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+100%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f6MbjJ1tJaCKJvdMX",
+					"name": "Ergonomic Design 2",
+					"local_notes": "Bulk +2;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fpVMBt31sGGgmL3lr",
+					"name": "Ergonomic Design 3",
+					"local_notes": "Bulk +3;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+300%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fbiUWqZfgZmlQVmb1",
+					"name": "Extra Barrel",
+					"local_notes": "Shots per Attack +1\nAccuracy -4\nBulk -2\nMinimum ST +2",
+					"cost": "+500%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 2500,
+				"extended_value": 2500,
+				"weight": "9 lb",
+				"extended_weight": "9 lb"
+			}
+		},
+		{
+			"id": "evFgWdpIOpBl1Lstf",
+			"description": "Firearm (Huge)",
+			"local_notes": "Encompasses very large caliber weapons and heavy weapon systems, most often vehicle mounted but adapted to Terran infantry usage, eq: anti-tank rifle, autocannons, rotary machine guns.\nIt is considered an arts unit.\n",
+			"tech_level": "9",
+			"legality_class": "3",
+			"tags": [
+				"Firearms"
+			],
+			"base_value": "4000",
+			"base_weight": "12 lb",
+			"weapons": [
+				{
+					"id": "WmIiMDf06cPB0CNXR",
+					"damage": {
+						"type": "pi+",
+						"base": "3d",
+						"armor_divisor": 1.4
+					},
+					"strength": "12†",
+					"accuracy": "2",
+					"range": "120/1,200",
+					"rate_of_fire": "1/1",
+					"shots": "9+1(5)",
+					"bulk": "-5",
+					"recoil": "4",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Small",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Medium",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Heavy",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Huge"
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Artillery",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "3d(1.4) pi+"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "f_EHHxNFNhID9Pv7b",
+					"name": "Arts Catalyst Improvement 1",
+					"local_notes": "Armor division +5%;\n+1 Recoil",
+					"cost": "+200%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fv3sY_Nod82yRFKla",
+					"name": "Arts Catalyst Improvement 2",
+					"local_notes": "Armor division +10%;\n+1 Recoil",
+					"cost": "+400%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 10
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fq8rf6WAZkTTafu0T",
+					"name": "Arts Catalyst Improvement 3",
+					"local_notes": "Armor division +15%;\n+2 Recoil",
+					"cost": "+600%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 15
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f6nvApUcqan05nFBY",
+					"name": "Arts Catalyst Improvement 4",
+					"local_notes": "Armor division +20%;\n+2 Recoil",
+					"cost": "+800%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fJJ8gEj1rfqmG7Why",
+					"name": "Arts Catalyst Improvement 5",
+					"local_notes": "Armor division +25%;\n+3 Recoil",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 25
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fNP4XbLv2q-ZRV9bE",
+					"name": "Heavy Penetrator",
+					"local_notes": "Shots overpenetrate 1 target, albeit at a reduced damage of 1d\nRecoil +1",
+					"cost": "+1000%",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f7FjT0zsgCw8SlB3E",
+					"name": "Reduced Magazine 1",
+					"local_notes": "Non-chamber shots -5;\nBulk +1",
+					"weight_type": "to_base_weight",
+					"cost": "-10%",
+					"weight": "-0.2 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fBG71RPnxqkLpvKUu",
+					"name": "Box Magazine",
+					"local_notes": "Non-chamber shots +90;\nBulk -4\nReload +2",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_reload_time_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_non_chamber_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 90
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "flSa_k-c-3cUCP1jv",
+					"name": "Foregrip Attachment",
+					"local_notes": "Reduces recoil by -1",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fPSWHsgOPVJzGfnP7",
+					"name": "Bipod Attachment",
+					"local_notes": "Reduces recoil by -1\n(B412 for Bipod and Tripod rules)",
+					"weight_type": "to_base_weight",
+					"cost": "+40%",
+					"weight": "+0.8 lb",
+					"features": [
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "feIVxRVTSkhu4nPZU",
+					"name": "Scope Attachment",
+					"local_notes": "Scope accuracy +2;\nHalf-range damage modifier +30%;\nBulk -1;",
+					"weight_type": "to_base_weight",
+					"cost": "+120%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_scope_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fC3VBLxcuuXhsr9yb",
+					"name": "Sight Attachment 1",
+					"local_notes": "Weapon accuracy +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+80%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0i5im57g463BUAJg",
+					"name": "Sight Attachment 2",
+					"local_notes": "Weapon accuracy +2;",
+					"weight_type": "to_base_weight",
+					"cost": "+160%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fqNhbWlG0EJ2ciJct",
+					"name": "Sight Attachment 3",
+					"local_notes": "Weapon accuracy +3;",
+					"weight_type": "to_base_weight",
+					"cost": "+240%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f0I3LNFE8XTi_Kp7Z",
+					"name": "Sight Attachment 4",
+					"local_notes": "Weapon accuracy +4;",
+					"weight_type": "to_base_weight",
+					"cost": "+320%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 4,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fVXoA48dg3V67jK-f",
+					"name": "Sight Attachment 5",
+					"local_notes": "Weapon accuracy +5;",
+					"weight_type": "to_base_weight",
+					"cost": "+400%",
+					"weight": "+0.6 lb",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fOlwDQN58ZQpuTB34",
+					"name": "Automatic Firearm Mode Design 1",
+					"local_notes": "Shoots per attack +1;\nAccuracy -2;\nRecoil +1;\nMinimum ST +1",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fpmuRNcFQI0j9wg6z",
+					"name": "Automatic Firearm Mode Design 2",
+					"local_notes": "Shoots per attack +2;\nAccuracy -4;\nRecoil +2;\nMinimum ST +2",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+400%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_rof_mode_2_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_recoil_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fFKgS9crRER0NvdNQ",
+					"name": "Long Barrel",
+					"local_notes": "Half-damage range +30%;\nMax range +30%;\nBulk -1;\nMinimum ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+100%",
+					"weight": "+1 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						},
+						{
+							"type": "weapon_max_reach_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 30
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fBJmeyN5shQhMUs9A",
+					"name": "Arts Charger",
+					"local_notes": "Gunner may concentrate for one turn, spending 1 FP.\nOn the next attack, the gunner may shoot only once, applying an extra 1d damage;\nRequired ST +1;",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "+0.5 lb",
+					"disabled": true
+				},
+				{
+					"id": "fyzijjILlQBKxwZNK",
+					"name": "Single Bullet Reload",
+					"local_notes": "Sets bullets per reload to 1\nSets reload time to 1 turn",
+					"cost": "-20%",
+					"weight": "-0.2 lb",
+					"disabled": true
+				},
+				{
+					"id": "f5f9R4fLAePBWqOAJ",
+					"name": "Shortened Barrel",
+					"local_notes": "Range and Half Damage range -20%;\nRequired ST -1",
+					"weight_type": "to_base_weight",
+					"cost": "+60%",
+					"weight": "-0.5 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -1
+						},
+						{
+							"type": "weapon_max_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						},
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -20
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fxT12ThxGYds95o-X",
+					"name": "Lightweight Polymers",
+					"weight_type": "to_base_weight",
+					"cost": "+200%",
+					"weight": "x80%",
+					"disabled": true
+				},
+				{
+					"id": "fYNfc078IDaUpQGRC",
+					"name": "Ergonomic Design 1",
+					"local_notes": "Bulk +1;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+100%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "f4b9XuTBmXo6XtdYj",
+					"name": "Ergonomic Design 2",
+					"local_notes": "Bulk +2;",
+					"cost_is_per_level": true,
+					"weight_type": "to_base_weight",
+					"weight_is_per_level": true,
+					"cost": "+200%",
+					"weight": "x95%",
+					"features": [
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2,
+							"leveled": true
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "fPcQUsljKpH5gEjjG",
+					"name": "Extra Barrel",
+					"local_notes": "Shots per Attack +1\nAccuracy -4\nBulk -2\nMinimum ST +2",
+					"cost": "+500%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_min_st_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						},
+						{
+							"type": "weapon_bulk_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -2
+						},
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": -4
+						},
+						{
+							"type": "weapon_rof_mode_1_shots_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"disabled": true
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 4000,
+				"extended_value": 4000,
+				"weight": "12 lb",
+				"extended_weight": "12 lb"
+			}
+		},
+		{
+			"id": "ePjMfhFoBHub8JdAk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "High Tech\\High Tech Equipment.eqp",
+				"id": "etl2A0mrGdBqOAZmg"
+			},
+			"description": "Firearm (Artillery)",
+			"reference": "HT145",
+			"local_notes": "Encompasses infantry artillery weapons and grenade launchers, eq: light mortars, grenade launchers.\nIt is considered an arts unit.",
+			"tech_level": "9",
+			"legality_class": "3",
+			"tags": [
+				"Firearms"
+			],
+			"base_value": "4500",
+			"base_weight": "9 lb",
+			"weapons": [
+				{
+					"id": "W0hvBEtrJDX5EcX3R",
+					"damage": {
+						"type": "cr ex",
+						"base": "2d",
+						"fragmentation": "2d",
+						"fragmentation_type": "cut"
+					},
+					"strength": "10†",
+					"accuracy": "1",
+					"range": "50/500",
+					"rate_of_fire": "1",
+					"shots": "1(3)",
+					"bulk": "-4",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Small",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Medium",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Heavy",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Huge",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Arts Firearms",
+							"specialization": "Artillery"
+						}
+					],
+					"calc": {
+						"damage": "2d cr ex [2d cut]"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fI2zs37_WFhUr95Os",
+					"name": "Bombard",
+					"local_notes": "May use indirect fire to target enemies behind cover",
+					"cost": "+300%",
+					"disabled": true
+				},
+				{
+					"id": "fTq4n1AItWZCht5i1",
+					"name": "High Power Propellant",
+					"local_notes": "Range +20%\nHalf Damage Range +20%",
+					"cost": "+300%",
+					"weight": "+2 lb",
+					"features": [
+						{
+							"type": "weapon_half_damage_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						},
+						{
+							"type": "weapon_max_range_bonus",
+							"percent": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 20
+						}
+					],
+					"disabled": true
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"value": 4500,
+				"extended_value": 4500,
+				"weight": "9 lb",
+				"extended_weight": "9 lb"
+			}
+		},
+		{
+			"id": "ErsubI6p1_qUBGvo1",
+			"description": "Magazine",
+			"tech_level": "9",
+			"legality_class": "4",
+			"base_value": "21",
+			"base_weight": "0.5",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 21,
+				"extended_value": 21,
+				"weight": "0.5 lb",
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "EGfaRsMJUrIn_fpOj",
+			"description": "Small Firearm Cartridges",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ewlan_p__6rb1ZvpK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Cartridge",
+					"reference": "HT176",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "0.3",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 0.3,
+						"extended_value": 0.3,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "eYcZ3VUF5UxAmfilq",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Acid",
+					"reference": "HT176",
+					"local_notes": "Lightly splashes the target in the area hit by the bullet. Treat it as a strong acid.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "6",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 6,
+						"extended_value": 6,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "eW04CyDOGWEGr42_4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Bleeding",
+					"reference": "HT176",
+					"local_notes": "Inflicts bleeding if target suffers HP damage.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "3",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 3,
+						"extended_value": 3,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "efcKaR5I79tL2mN78",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Daze",
+					"reference": "HT176",
+					"local_notes": "Inflicts daze affliction.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "6",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 6,
+						"extended_value": 6,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "ezzcsoUKjRmrHzX5e",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Incendiary",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Target may catch fire (Gurps Basic p.434).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "3",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 3,
+						"extended_value": 3,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "exPj2N-EGqBPsSdZn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Cold",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 damage to HP and FP via frostbite in the area hit (Gurps High Tech p.63).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "6",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 6,
+						"extended_value": 6,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "ejePI44juqtjx962t",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Electrical",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Has unusual side effects on electronics and conductive materials, as per Lightning spell (Gurps Magic p.196).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "3",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 3,
+						"extended_value": 3,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "epkx504ZTlTligwEu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - Poison",
+					"reference": "HT176",
+					"local_notes": "Allows application of small doses of poison of the user's choice. Counts as Follow-Up poison.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "3",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 3,
+						"extended_value": 3,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				},
+				{
+					"id": "eZvCFeHv3p_-I3CKA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Small) Specialized Cartridge - High Power",
+					"reference": "HT176",
+					"local_notes": "Increases weapon damage by +3.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "6",
+					"base_weight": "0.026 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 6,
+						"extended_value": 6,
+						"weight": "0.026 lb",
+						"extended_weight": "0.026 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 36.3,
+				"weight": "0 lb",
+				"extended_weight": "0.234 lb"
+			}
+		},
+		{
+			"id": "E7UyG5Mku_wlLHBYQ",
+			"description": "Medium Firearm Cartridges",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "e78FrkWMl9Qy-Zn_m",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eKHp5iaFeGvPy17WW"
+					},
+					"description": "Firearm (Medium) Cartridge",
+					"reference": "HT176",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "0.8",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 0.8,
+						"extended_value": 0.8,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "ef1MC4M1dfJxC0vhC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Acid",
+					"reference": "HT176",
+					"local_notes": "Lightly splashes the target in the area hit by the bullet. Treat it as a strong acid.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "8",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 8,
+						"extended_value": 8,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "ePpLkYZ13owqYEUnQ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Bleeding",
+					"reference": "HT176",
+					"local_notes": "Inflicts bleeding if target suffers HP damage.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "4",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 4,
+						"extended_value": 4,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "eLkjpomuuiRQ0WWpY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Daze",
+					"reference": "HT176",
+					"local_notes": "Inflicts daze affliction.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "8",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 8,
+						"extended_value": 8,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "exvR__C-XdZfBKIzN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Incendiary",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Target may catch fire (Gurps Basic p.434).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "4",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 4,
+						"extended_value": 4,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "eA7d7Rf2U0ep8V3kf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Cold",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 damage to HP and FP via frostbite in the area hit (Gurps High Tech p.63).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "8",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 8,
+						"extended_value": 8,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "ed3rtqfld3AqcQ3E_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Electrical",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Has unusual side effects on electronics and conductive materials, as per Lightning spell (Gurps Magic p.196).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "4",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 4,
+						"extended_value": 4,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "ek5-09zbdejDMUYRV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - Poison",
+					"reference": "HT176",
+					"local_notes": "Allows application of small doses of poison of the user's choice. Counts as Follow-Up poison.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "4",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 4,
+						"extended_value": 4,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				},
+				{
+					"id": "eXlEI7cTHOZNmxGlZ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Medium) Specialized Cartridge - High Power",
+					"reference": "HT176",
+					"local_notes": "Increases weapon damage by +3.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "8",
+					"base_weight": "0.056 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 8,
+						"extended_value": 8,
+						"weight": "0.056 lb",
+						"extended_weight": "0.056 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 48.8,
+				"weight": "0 lb",
+				"extended_weight": "0.504 lb"
+			}
+		},
+		{
+			"id": "EfgXcOgaWr8kGU4VX",
+			"description": "Heavy Firearm Cartridges",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eswTLc9suQ2vToUaf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eKHp5iaFeGvPy17WW"
+					},
+					"description": "Firearm (Heavy) Cartridge",
+					"reference": "HT176",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "4",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 4,
+						"extended_value": 4,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "eQD9rwXh3RUGceVJA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Acid",
+					"reference": "HT176",
+					"local_notes": "Lightly splashes the target in the area hit by the bullet. Treat it as a strong acid.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "40",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e9CXY4Hd5YM41RKHL",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Bleeding",
+					"reference": "HT176",
+					"local_notes": "Inflicts bleeding if target suffers HP damage.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "20",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "ehbRrO1Gi8bxpH3yp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Daze",
+					"reference": "HT176",
+					"local_notes": "Inflicts daze affliction.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "40",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e1wZYyyyPaw9jhQFP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Incendiary",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Target may catch fire (Gurps Basic p.434).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "20",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "er43fLj-E-bXJIfC7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Cold",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 damage to HP and FP via frostbite in the area hit (Gurps High Tech p.63).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "40",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "ej-kH80rry9B2jUXf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Electrical",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Has unusual side effects on electronics and conductive materials, as per Lightning spell (Gurps Magic p.196).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "20",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e_M7LYpYdZpl4bj91",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - Poison",
+					"reference": "HT176",
+					"local_notes": "Allows application of small doses of poison of the user's choice. Counts as Follow-Up poison.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "20",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "eDb-qyxLmLonB4aST",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Heavy) Specialized Cartridge - High Power",
+					"reference": "HT176",
+					"local_notes": "Increases weapon damage by +3.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "40",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 244,
+				"weight": "0 lb",
+				"extended_weight": "2.25 lb"
+			}
+		},
+		{
+			"id": "ELv6-t1T4uYpwhatu",
+			"description": "Huge Firearm Cartridges",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eWbwZkDy9SvRNUnUP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eKHp5iaFeGvPy17WW"
+					},
+					"description": "Firearm (Huge) Cartridge",
+					"reference": "HT176",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "6.7",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 6.7,
+						"extended_value": 6.7,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "eaQF7oZ4ksZXMjF0g",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Acid",
+					"reference": "HT176",
+					"local_notes": "Lightly splashes the target in the area hit by the bullet. Treat it as a strong acid.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "67",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 67,
+						"extended_value": 67,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "e-EOX8iLiQkEzTYvg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Bleeding",
+					"reference": "HT176",
+					"local_notes": "Inflicts bleeding if target suffers HP damage.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "34",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 34,
+						"extended_value": 34,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "ecJIrorEiT0tw3zpG",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Daze",
+					"reference": "HT176",
+					"local_notes": "Inflicts daze affliction.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "67",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 67,
+						"extended_value": 67,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "e6ZGsKymnL4g02m7D",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Incendiary",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Target may catch fire (Gurps Basic p.434).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "34",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 34,
+						"extended_value": 34,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "eb2TYQt3eBVpLjD4u",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Cold",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 damage to HP and FP via frostbite in the area hit (Gurps High Tech p.63).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "67",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 67,
+						"extended_value": 67,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "eaksIzD3Vjhnmz59e",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Electrical",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d-2 burning damage in the area hit. Has unusual side effects on electronics and conductive materials, as per Lightning spell (Gurps Magic p.196).",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "34",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 34,
+						"extended_value": 34,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "eARutOnddnaxRtR6I",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - Poison",
+					"reference": "HT176",
+					"local_notes": "Allows application of small doses of poison of the user's choice. Counts as Follow-Up poison.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "34",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 34,
+						"extended_value": 34,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "efUpx3Flyvc7EjMBC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - High Power",
+					"reference": "HT176",
+					"local_notes": "Increases weapon damage by +3.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "67",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 67,
+						"extended_value": 67,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				},
+				{
+					"id": "e8SKkV5Ninkm9a3Bx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Huge) Specialized Cartridge - High Explosive",
+					"reference": "HT176",
+					"local_notes": "Causes an extra 1d fragmentation damage",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "80",
+					"base_weight": "0.44 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 80,
+						"extended_value": 80,
+						"weight": "0.44 lb",
+						"extended_weight": "0.44 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 490.7,
+				"weight": "0 lb",
+				"extended_weight": "4.4 lb"
+			}
+		},
+		{
+			"id": "EAmHMe2lJjbQlG34v",
+			"description": "Artillery Ammunition List",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ecYFPpNSrwP8keV9V",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eziKoQG-G6FQDqxAj"
+					},
+					"description": "Firearm (Artillery) Grenade/Shell",
+					"reference": "HT177",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "8",
+					"base_weight": "0.55 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 8,
+						"extended_value": 8,
+						"weight": "0.55 lb",
+						"extended_weight": "0.55 lb"
+					}
+				},
+				{
+					"id": "ekp1wc9-S2TCr9rIm",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eziKoQG-G6FQDqxAj"
+					},
+					"description": "Firearm (Artillery) Specialized Cartridge - Poison",
+					"reference": "HT177",
+					"local_notes": "Changes damage type to cr, removing the fragmentation effect of the grenade. \n\nThis ammunition allows the weapon user to add a poisonous gas of their choice in the ammunition cartridge. The gas will cover an area of 5 yards radius around the place that was struck, and will persist for a minute or less depending of environmental conditions such as wind.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "80",
+					"base_weight": "0.55 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 80,
+						"extended_value": 80,
+						"weight": "0.55 lb",
+						"extended_weight": "0.55 lb"
+					}
+				},
+				{
+					"id": "eLEgvqo8o5q3etY2q",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Artillery) Specialized Cartridge - Daze",
+					"reference": "HT176",
+					"local_notes": "Inflicts daze affliction.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "80",
+					"base_weight": "0.55 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 80,
+						"extended_value": 80,
+						"weight": "0.55 lb",
+						"extended_weight": "0.55 lb"
+					}
+				},
+				{
+					"id": "eJA4kJdD-hC0ZnGSp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech\\High Tech Equipment.eqp",
+						"id": "eDpwycU3319jm_aUv"
+					},
+					"description": "Firearm (Artillery) Specialized Cartridge - High Power",
+					"reference": "HT176",
+					"local_notes": "Increases weapon damage by +3.",
+					"tags": [
+						"Ammunition",
+						"Warheads"
+					],
+					"base_value": "80",
+					"base_weight": "0.55 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 80,
+						"extended_value": 80,
+						"weight": "0.55 lb",
+						"extended_weight": "0.55 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 248,
+				"weight": "0 lb",
+				"extended_weight": "2.2 lb"
+			}
+		}
+	]
+}
