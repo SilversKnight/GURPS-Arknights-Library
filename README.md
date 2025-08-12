@@ -1,6 +1,11 @@
 "# GURPS-Arknights-Library"
 
-This is an Arknights Library for usage in the GCS software for GURPS campaigns. It is currently under development.
+This is an Arknights Library developed for usage with the GCS software for GURPS campaigns.
+
+* For a detailed breakdown of the content available, access the spreadsheet on the link below:
+
+https://docs.google.com/spreadsheets/d/1AjqXk0yLsMMPTVVqzQh5yYGd-mdg7lIMjg1iWeH52jo/edit?usp=sharing
+
 
 Version 0.1
 
@@ -108,14 +113,6 @@ Arts Unit
 -----------------------------
 
 Version 1.0
-
-
-* For a detailed breakdown of the content available, access the spreadsheet on the link below:
-
-
-https://docs.google.com/spreadsheets/d/1AjqXk0yLsMMPTVVqzQh5yYGd-mdg7lIMjg1iWeH52jo/edit?usp=sharing
-
-
 
 * Addition of Racial Templates for the following races (CREDITS TO REESE'S):
 
