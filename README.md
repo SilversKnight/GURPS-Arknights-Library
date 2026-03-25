@@ -444,3 +444,7 @@ Caprinae
 Cautus
 
 Ursus
+
+* New Spells 
+
+Arts Projectile
