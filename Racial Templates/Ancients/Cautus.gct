@@ -1,0 +1,395 @@
+{
+	"version": 5,
+	"id": "BYhW-T2Kvj1vnW568",
+	"traits": [
+		{
+			"id": "T9Lr1lIvo1fLcVw8a",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tH-q9TmNONc0bnSl1",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tfeoYExol5MG_lvRJ",
+					"name": "Cautus Physiology",
+					"local_notes": "As a Cautus, you naturally possess greater dexterity; but a frail body. You may purchase DX at a lower cost than normal, while ST is more expensive than usual. Cautus smaller stature makes them harder to hit, giving them 1 free level in Enhanced Dodge. Their listening ability is excelent, and their natural adaptations for navigating in underground tunnels give them incredible sense of direction.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t4lrQ-q_aeVZ3943t",
+					"name": "Cautus Strength",
+					"local_notes": "When purchasing ST, the Attribute, USE THIS TRAIT. Do not use the normal attribute version unless we have verified you have increased its cost manually in your sheet. ST for Cautus costs 20% more than normal.",
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0,
+						"current_level": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "Taal8b6nhi3iWzbqz",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tPCQNNKrIgTDUODf1",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "twGsZPV8OE0NLFaXl"
+					},
+					"name": "Enhanced Dodge",
+					"reference": "B51,MA43",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": -15,
+					"points_per_level": 15,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dodge",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "t_hTJkTClmytbgN9t",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tTr0n87UXk6YrVoKR"
+					},
+					"name": "Discriminatory Hearing",
+					"reference": "B49,P47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "my64JnfTUTDUmNzaV",
+							"name": "Only underwater",
+							"reference": "B49",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "mxDJ2uBL5Y7hugelV",
+							"name": "Profiling",
+							"reference": "P47",
+							"cost_adj": "50%",
+							"disabled": true
+						}
+					],
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Shadowing skill when following a noisy target",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on any task that utilizes hearing",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tpnRRdZSDuzbDk--Y",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t6XtSYhM7yan5_B73"
+					},
+					"name": "Acute Hearing",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 0,
+						"current_level": 3
+					}
+				},
+				{
+					"id": "toDJw57xVrfCcqB9d",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tM6z7Mx6e2V4VvUR4"
+					},
+					"name": "Absolute Direction",
+					"reference": "B34",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mfVjXy-a8LvwgjdYj",
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mlJFWld5xRzBlUd4I",
+							"name": "Liberi Physiology",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mIejntJfSE23FbxVf",
+							"name": "Cautus Physiology",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "mxc7LodSX24OUeLpt",
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost_adj": "5",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									},
+									"amount": 2
+								}
+							],
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							},
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TLcQg1354z6hHIPiK",
+			"name": "Racial Disadvantages",
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

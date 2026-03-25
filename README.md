@@ -432,3 +432,15 @@ Modifiers:
 Susceptible
 Foregone
 Potent Resilience
+
+-----------------------------
+
+Version 1.01
+
+* Addition of Racial Templates for the following races 
+
+Caprinae
+
+Cautus
+
+Ursus

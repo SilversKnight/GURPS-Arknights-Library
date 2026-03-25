@@ -1,0 +1,914 @@
+{
+	"version": 5,
+	"id": "BZ8nN-9lsySqDB6rM",
+	"traits": [
+		{
+			"id": "TSVR1vwLymXlMfv0g",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "t9f6b5sRlSFdvkBuq",
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzubK4nG2pogzUhaD",
+					"name": "Ursine Physiology",
+					"local_notes": "Your unique capabilities allow you to purchase ST and HT cheaper, at the cost of some fine motor skills. Alongside this, you gain some inherent extra lifting power, and are more difficult to put down.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t0yZluOiRB2roPROD",
+					"name": "Ursine Clumsiness",
+					"local_notes": "Ursine capabilities trend more towards their immense power and fitness, and not often to their Dextrous nature. When spending on DX, increase this Trait instead of increasing the Attribute directly.",
+					"modifiers": [
+						{
+							"id": "mJ4cCWz5aqwReC5t_",
+							"name": "Trait Modifier",
+							"cost": -20,
+							"disabled": true
+						}
+					],
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TCMsbgk0Xsp5MevXm",
+			"name": "Racial Advantages",
+			"children": [
+				{
+					"id": "tCIecKbPXwwOiJg7u",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSv_wTFThILN-4rlX"
+					},
+					"name": "Fit (Terran)",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mcXLVhGFeDwLY-6D1",
+							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
+							"local_notes": "You naturally stay in shape.",
+							"cost": -100,
+							"disabled": true
+						},
+						{
+							"id": "mYHXb47XPNho9PpAF",
+							"name": "Ursine Physiology",
+							"local_notes": "It's hard to keep you down.",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "ms-6s2vO4iFPJh1GL",
+							"name": "Vouivre Physiology",
+							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tSxZids48XgvcRtbX",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "txSLRSX9nxLwQkE2n"
+					},
+					"name": "Ursine Resilence",
+					"reference": "B58",
+					"local_notes": "You're hard to put down. In any situation where you may need to roll against dying, you receive a bonus equal to this trait's level. This counts as Hard to Kill, and cannot be levelled past this point.",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mjh1436OQBI6srPQB",
+							"name": "Ursine Physiology",
+							"cost": -6,
+							"cost_type": "points"
+						}
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tvpYQG2jCnXtFB17Z",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t5K9V7-_MYD_0BOQ8"
+					},
+					"name": "Ursine Tenacity",
+					"reference": "B59",
+					"local_notes": "It's hard to put you under. In any situation where you may need to roll HT to avoid unconsciousness, you receive a bonus equal to this trait's level. This counts as Hard to Subdue, and cannot be levelled past this point.",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mitIL0YK0cVhSoxMO",
+							"name": "Ursine Physiology",
+							"cost": -6,
+							"cost_type": "points"
+						}
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to any HT roll to avoid unconsciousness",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tRVPVHEs4JnivRuf6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tjftBnelz1fSAUymc"
+					},
+					"name": "Striking ST (Terran)",
+					"reference": "B65,P58",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m2hMV--S9UJJo6Pso",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mGdypR0K_lzkm9JRX",
+							"name": "Archosauria, Cyclops, Durin, Gargoyle, Forte, ",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mu07bzuEqOTY4ZG7r",
+							"name": "Goliath, Oni, Ursine, Vouivre Physiology",
+							"cost": -40
+						},
+						{
+							"id": "m-iHtwbjI0oF7ugy0",
+							"name": "Ursine Power",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mfIzzsi4fGAzmyYuo",
+							"name": " Anaty, Anura, Liberi, Sankta, Vulpo, Zalak Physiology",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mpKC_hp9uMkhRRnHr",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mpVBmx_SfjLdlV0KA",
+							"name": "Super-Effort",
+							"reference": "P58",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "mvKpqrEEUuK3meC_E",
+							"name": "Know Your Own Strength Variant Price",
+							"reference": "PY83:18",
+							"cost": 4,
+							"cost_type": "points",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mSx_8foGuk2-oMLlX",
+							"name": "@Limb@ Grip ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						},
+						{
+							"id": "mEnw5EDVptgJCSyAY",
+							"name": "Bite ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "striking_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tLqq0UCWwqa8YVD75",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tBmSJ3pNE53c4IRUU"
+					},
+					"name": "Ursine Toughness",
+					"reference": "B47,P45,MA43,PSI14",
+					"local_notes": "You gain DR 2 to all body parts, except for the eyes, which stacks with normal armor.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mumyoCrDSPEwcKsgL",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mBMG1lCoLnp76-NiL",
+							"name": "Ursine Physiology",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mjEZBDvxKVKnhynGY",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m_I36JHlFmmL9RMtl",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mSr1sMk_VS_I1h-G6",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m3zVhkRTCVsi0K7j8",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m_cC__VR2W61Ifv_-",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mtczGyPuRzX-HpJo5",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mLHZsLIASGn5WO_ed",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mW-QA1VK2CC0tjaYX",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mmZv5mPAc01u61u3X",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "mF95wzLpfTlClfL9y",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mxjmSLsCApSa8YTh8",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mFcOBBspbCAWdYiSf",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mvcRw8dpSsyHYDlY6",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mbeoegvOgMjVqOHaJ",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mTxqjyClgWV-iNgLp",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mGgN_omKDJCtd5IJX",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "myB_QKXj_S9xMdvXN",
+							"name": "Tough Skin",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mQbU7GP11tzMxYvha",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mZwO3CaEqaWP4HBLv",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "m57skZiff-9O_Te92",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mOlKx1ADNfNcBbqba",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mys0ks0GQn3HfrQ2J",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mM8UxH1mVKQzjX1If",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mVBqxqXMSNT2uYbm2",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"all"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "Tge0lznIqXrPMJDX9",
+			"name": "Racial Disadvantages",
+			"children": [
+				{
+					"id": "tI4FP40Q-vuIMkJxu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tx3gYRgamuFWB9JPN"
+					},
+					"name": "Ham-Fisted",
+					"reference": "B138",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "high manual dexterity"
+								}
+							}
+						]
+					},
+					"points_per_level": -5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "artist"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "jeweler"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "knot-tying"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "leatherworking"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "lockpicking"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "pickpocket"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sewing"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sleight of hand"
+							},
+							"amount": -3,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "surgery"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "machinist"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "mechanic"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "fast-draw"
+							},
+							"amount": -3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others where being tidy or well-groomed would matter",
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "to any Influence roll where being tidy or well-groomed would matter",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		}
+	],
+	"body_type": {
+		"name": "Humanoid",
+		"roll": "3d",
+		"locations": [
+			{
+				"id": "eye",
+				"choice_name": "Eyes",
+				"table_name": "Eyes",
+				"hit_penalty": -9,
+				"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+				"calc": {
+					"roll_range": "-"
+				}
+			},
+			{
+				"id": "skull",
+				"choice_name": "Skull",
+				"table_name": "Skull",
+				"slots": 2,
+				"hit_penalty": -7,
+				"dr_bonus": 2,
+				"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+				"calc": {
+					"roll_range": "3-4"
+				}
+			},
+			{
+				"id": "face",
+				"choice_name": "Face",
+				"table_name": "Face",
+				"slots": 1,
+				"hit_penalty": -5,
+				"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+				"calc": {
+					"roll_range": "5"
+				}
+			},
+			{
+				"id": "leg",
+				"choice_name": "Leg",
+				"table_name": "Right Leg",
+				"slots": 2,
+				"hit_penalty": -2,
+				"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+				"calc": {
+					"roll_range": "6-7"
+				}
+			},
+			{
+				"id": "arm",
+				"choice_name": "Arm",
+				"table_name": "Right Arm",
+				"slots": 1,
+				"hit_penalty": -2,
+				"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+				"calc": {
+					"roll_range": "8"
+				}
+			},
+			{
+				"id": "torso",
+				"choice_name": "Torso",
+				"table_name": "Torso",
+				"slots": 2,
+				"calc": {
+					"roll_range": "9-10"
+				}
+			},
+			{
+				"id": "groin",
+				"choice_name": "Groin",
+				"table_name": "Groin",
+				"slots": 1,
+				"hit_penalty": -3,
+				"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+				"calc": {
+					"roll_range": "11"
+				}
+			},
+			{
+				"id": "arm",
+				"choice_name": "Arm",
+				"table_name": "Left Arm",
+				"slots": 1,
+				"hit_penalty": -2,
+				"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+				"calc": {
+					"roll_range": "12"
+				}
+			},
+			{
+				"id": "leg",
+				"choice_name": "Leg",
+				"table_name": "Left Leg",
+				"slots": 2,
+				"hit_penalty": -2,
+				"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+				"calc": {
+					"roll_range": "13-14"
+				}
+			},
+			{
+				"id": "hand",
+				"choice_name": "Hand",
+				"table_name": "Hand",
+				"slots": 1,
+				"hit_penalty": -4,
+				"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+				"calc": {
+					"roll_range": "15"
+				}
+			},
+			{
+				"id": "foot",
+				"choice_name": "Foot",
+				"table_name": "Foot",
+				"slots": 1,
+				"hit_penalty": -4,
+				"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+				"calc": {
+					"roll_range": "16"
+				}
+			},
+			{
+				"id": "neck",
+				"choice_name": "Neck",
+				"table_name": "Neck",
+				"slots": 2,
+				"hit_penalty": -5,
+				"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+				"calc": {
+					"roll_range": "17-18"
+				}
+			},
+			{
+				"id": "vitals",
+				"choice_name": "Vitals",
+				"table_name": "Vitals",
+				"hit_penalty": -3,
+				"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+				"calc": {
+					"roll_range": "-"
+				}
+			}
+		]
+	}
+}
