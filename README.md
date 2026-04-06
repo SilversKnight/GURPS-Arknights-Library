@@ -448,3 +448,11 @@ Ursus
 * New Spells 
 
 Arts Projectile
+<<<<<<< HEAD
+=======
+
+-----------------------------
+
+Version 1.011 (Hotfix)
+
+* Fixed Cautus ST applying bônus to HT instead of ST

@@ -104,7 +104,7 @@
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"attribute": "ht",
+							"attribute": "st",
 							"amount": 1,
 							"per_level": true
 						}
