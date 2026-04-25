@@ -456,3 +456,9 @@ Arts Projectile
 Version 1.011 (Hotfix)
 
 * Fixed Cautus ST applying bônus to HT instead of ST
+
+-----------------------------
+
+Version 1.012 
+
+* Added Base Sheet. Duplicate and apply racial template to use.
