@@ -462,3 +462,15 @@ Version 1.011 (Hotfix)
 Version 1.012 
 
 * Added Base Sheet. Duplicate and apply racial template to use.
+
+-----------------------------
+
+Version 1.02 
+
+* Fixes:
+- Fixed oripathy status atribute missing on Base Sheet
+- Fixed Arts Casting not providing +3 MP
+
+* New content:
+- Attributes@Terran w. ORS & MP.attr attribute settings file added to the folder /Settings/Attributes
+- New Advantage 'Extra MP Points'

@@ -18,59 +18,59 @@
 			],
 			"modifiers": [
 				{
-					"id": "mLnt2xFH9EeVIDjJR",
+					"id": "m7f3s-X6abtT-We7l",
 					"name": "Dance",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "m7wNRLt5T6HdrehIc",
+					"id": "mIBTKPYtU4QxlrSfL",
 					"name": "Dark-Aspected",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "m3jiKHenlwXqpDB2s",
+					"id": "mWXPb-0QcyFZs2cIK",
 					"name": "Day-Aspected",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mbMTev4xPTBMMWBAw",
+					"id": "mM_yHw1fvK0_HJ2D-",
 					"name": "Musical",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mqOfQ07ARJumrcf9c",
+					"id": "m33uiOY_LOB6eueGQ",
 					"name": "Night-Aspected",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mhdXRf1ON5deKtJlo",
+					"id": "mXxgjFn2UXo7RWHCs",
 					"name": "One College",
 					"local_notes": "@College@",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mS2ufFIKJOxQhlPNj",
+					"id": "m6_PnZOxgxVOatW4c",
 					"name": "Solitary",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "m4fJR_CIKqI_s1PZ8",
+					"id": "mPBMnyNDK6AfFJtLq",
 					"name": "Song",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				}
@@ -78,6 +78,11 @@
 			"base_points": 5,
 			"points_per_level": 10,
 			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "mp",
+					"amount": 3
+				},
 				{
 					"type": "weapon_bonus",
 					"selection_type": "weapons_with_required_skill",
@@ -111,7 +116,37 @@
 			"can_level": true,
 			"levels": 1,
 			"calc": {
-				"points": 15
+				"points": 15,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "tAslFFooSNDjQoy_T",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "twvmiGFkU_Fw0FuZF"
+			},
+			"name": "Extra MP Points",
+			"local_notes": "Replaces FP when spellcasting until spent.\nUse this instead of Extra Fatigue Points Magic Only. ",
+			"tags": [
+				"Advantage",
+				"Attribute",
+				"Physical"
+			],
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "mp",
+					"amount": 1
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 2,
+				"current_level": 1
 			}
 		}
 	]
