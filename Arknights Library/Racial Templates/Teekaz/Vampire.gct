@@ -1,0 +1,720 @@
+{
+	"version": 5,
+	"id": "BiCgCIVBC_yHvDYh0",
+	"traits": [
+		{
+			"id": "TMj7kwazn8N0w_YFU",
+			"name": "Attribute Alterations",
+			"children": [
+				{
+					"id": "tAZqmM-ZOuLN8dEE1",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzmGTksfL2_MFCr-L",
+					"name": "Sarkaz Physiology",
+					"local_notes": "Most Sarkaz share a significant amount of traits, considering the predominant population of them are Goliaths, or otherwise mixed with them. This means many of them trend towards higher physical strength. Unspecified Sarkaz gain a significant cost reduction to ST. Additionally, Sarkaz can purchase Magery levels at a lower cost than normal, start with Magery level 0 by default, are generally aware and more fit, and have an innate amount of resistance not inherent to other races. However, to compensate for these major strengths, Sarkaz are all susceptible to Oripathy far more than most others. It's easier to contract, and for those that already have it, it's slightly easier for it to progress in them. Outliers exist, but they are outliers for a reason.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TC0lsZmbNg_9EkxIq",
+			"name": "Vampire Racial Advantages",
+			"children": [
+				{
+					"id": "tIyCe0WNpXhQIR1F6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWpTlKKOpepIiYZqD"
+					},
+					"name": "Arts Casting",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mNqeinJwmtx5sGCow",
+							"name": "Dance",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m5JGEsSXGOfqWJGau",
+							"name": "Banshee, Cerberus, Cyclops, Djall, Draco, Kitsune, Kylin, Lich, Nightzmora, Vampire Arts",
+							"cost_adj": "-40%",
+							"affects": "levels_only"
+						},
+						{
+							"id": "mRSb1UCFNHqrUTydU",
+							"name": "Anasa, Elafia, Gargoyle, Goliath, Sankta, Pegasus Arts",
+							"cost_adj": "-20%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m1Wq0AWtJ4qPruG8i",
+							"name": "Sarkaz Arts",
+							"local_notes": "You begin with level 0 Magery for free.",
+							"cost_adj": "-5",
+							"affects": "base_only"
+						},
+						{
+							"id": "mQABjA8Iue3yfnyIt",
+							"name": "Sankta Arts",
+							"cost_adj": "-5",
+							"affects": "base_only",
+							"disabled": true
+						},
+						{
+							"id": "mIjkkvHFEqeX73zRV",
+							"name": "Dark-Aspected",
+							"cost_adj": "-50%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m61AsLwraW44shHo5",
+							"name": "Day-Aspected",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mvd0TDaxCT4bLFHMO",
+							"name": "Musical",
+							"cost_adj": "-50%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "muoJ107URWoThzAtC",
+							"name": "Night-Aspected",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m7g6zQjdnYigsTF2A",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mT3GU7NQtRGoZxBFz",
+							"name": "Solitary",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mMm-BlS33o9aNhWmt",
+							"name": "Song",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arts Firearms"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 0.4,
+							"leveled": true
+						},
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0,
+						"current_level": 0
+					}
+				},
+				{
+					"id": "te_zNbMTbpjj9Q-M4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tK9Ov0WtlrhnJFy5n"
+					},
+					"name": "Sharp Teeth",
+					"reference": "B91",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mIYKE6gk3kxAztYhf",
+							"name": "Provided by Vampiric Bite",
+							"reference": "B96",
+							"cost_adj": "-1"
+						}
+					],
+					"base_points": 1,
+					"weapons": [
+						{
+							"id": "w0Vsnp_SWjJ91aABx",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cut"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "twpo-9Sh0oKT7VWwQ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tFHSoGWBDirlMO6Dd"
+					},
+					"name": "Vampiric Bite",
+					"reference": "B96",
+					"local_notes": "Drains 1 HP + 1/level per second. For every 3 HP stolen, you heal 1 HP or 1 FP (your choice). Also lets you bite in combat without feeding. Add Teeth (Sharp Teeth) or Teeth (Sharp Beak) – your choice for free.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mJzTKG2VyqrH7xeIA",
+							"name": "Vampiric Heritage",
+							"cost_adj": "-40%"
+						}
+					],
+					"base_points": 30,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 18,
+						"current_level": 0
+					}
+				},
+				{
+					"id": "t2YkWWiHRs9HyHGm-",
+					"name": "Vampire's Embrace",
+					"local_notes": "A Vampire's thirst for blood is unrelenting and in the midst of feeding, their focus is single-minded and unbreakable.  As a consequence from having to forcibly acquire their blood directly from the source for generations, a Vampire instinctively knows how to keep their victim tightly in their grasp, at least until they sate their hunger.\n\n+1 to all grappling checks.  Increase to +2 if currently suffering from the effects of Dependency (Blood).",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tObwjS9dxsGSJamQU",
+					"name": "Vampire's Heritage",
+					"local_notes": "Not only does it sustain you, your kind have venerated the ichor of life to the point your arts have an innate specialization in manipulating it.  Besides providing a +1 advantage when casting any blood-related spell, it also allows you to ignore the standard requirements in learning blood arts.",
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Steal Vigor"
+							},
+							"amount": 1
+						},
+						{
+							"type": "spell_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Steal Vitality"
+							},
+							"amount": 1
+						},
+						{
+							"type": "spell_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Steal Energy"
+							},
+							"amount": 1
+						},
+						{
+							"type": "spell_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "Blood"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 18
+			}
+		},
+		{
+			"id": "T_0BBbNifb9G75ZZf",
+			"name": "Vampire Racial Disadvantages",
+			"children": [
+				{
+					"id": "tgrW53iFk8cDum_xs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "td5zyb9sBhZkHhkmv"
+					},
+					"name": "Dependency (Blood)",
+					"reference": "B130",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mBgRVmBwAHqP6TvuK",
+							"name": "Rarity: Rare",
+							"reference": "B130",
+							"cost_adj": "-30",
+							"disabled": true
+						},
+						{
+							"id": "mWKfB7ubGKQjRgBWO",
+							"name": "Rarity: Occasional",
+							"reference": "B130",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "m1vNb0sUhx-cRrWFD",
+							"name": "Rarity: Common",
+							"reference": "B130",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mhKVikTOTqrYmNlOq",
+							"name": "Rarity: Very Common",
+							"reference": "B130",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "m_iPQG7EDuKtxK51L",
+							"name": "Illegal",
+							"reference": "B130",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mS1pNr0ayxiT2yv2G",
+							"name": "Frequency: Constantly",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per minute without it",
+							"cost_adj": "x5",
+							"disabled": true
+						},
+						{
+							"id": "m8ADNZRxtv5FszCU9",
+							"name": "Frequency: Hourly",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per 10 minutes after missing a hourly dose",
+							"cost_adj": "x4",
+							"disabled": true
+						},
+						{
+							"id": "mrt8UaHRikpmTGJuG",
+							"name": "Frequency: Daily",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per hour after missing a daily dose",
+							"cost_adj": "x3"
+						},
+						{
+							"id": "mwObQL3nrs0HE_wi_",
+							"name": "Frequency: Weekly",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per six hours after missing a weekly dose",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mIY_3mtSUz0JcaUEh",
+							"name": "Frequency: Monthly",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per day after missing a monthly dose",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "m_Zumc9l6Bm37bxNw",
+							"name": "Frequency: Seasonally",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per 3 days after missing a seasonal dose",
+							"cost_adj": "x0.3333",
+							"disabled": true
+						},
+						{
+							"id": "mTDjh2UwuiN1bUMUH",
+							"name": "Frequency: Yearly",
+							"reference": "B130",
+							"local_notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
+							"cost_adj": "x0.1",
+							"disabled": true
+						},
+						{
+							"id": "mqx2gC3D9h4U9hjSv",
+							"name": "Aging",
+							"reference": "B130",
+							"local_notes": "Age 2 years for each HP lost due to this dependency",
+							"cost_adj": "30%",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "txfl3doPGOtP9rYEe",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tFVCzZZ1e01Fvormg"
+					},
+					"name": "Oripathy: Resistance",
+					"local_notes": "Determines your resistance to Oripathy. You will be expected to keep track of your Oripathy Resistance value (default equal to triple your HT score). Whenever you miss a Dosage of Suppressant, roll a HT roll at each interval. If failed, you reduce your resistance by one point (or by two on a 17 or 18 on the dice!), on top of the lost HP.\n\nIf you were at Stage I, you progress to Stage II automatically upon your resistance equalling half of your Resistance score. (beginning at Stage II starts you at this point!).\n\nIf you reach one quarter of your resistance score, you progress to Stage III, and your Dosage requirement goes up by one step. You gain no additional points from this.\n\nFurthermore, your Oripathy may begin to worsen regardless of treatment at Stage III. Everyday that causes pain due to your Oripathy also reduces your Resistance value as if you failed normally.\n\nBeing in a Catastrophe, or other areas with high Originium concentration might also cause your Resistance to falter. The GM will often call for a HT roll, unless not applicable due to excessive concentration.\n\nYou may alter your resistance with the modifiers on this Trait further, weakening or strengthening them, depending on your character's physiologies. Some people are 'built different!'\n\nAdditionally, if your HT score ever rises during play, you may restore one point of Resistance for every point your HT rises, representing you keeping in good practice to fend off your condition.",
+					"modifiers": [
+						{
+							"id": "mZkXpIQXFdoyaJJBB",
+							"name": "Susceptible",
+							"local_notes": "Contracting Oripathy for you is, unfortunately, easier. If the GM ever rolls, or asks you to roll, against your HT value to determine if you contract Oripathy, you take a -4 to your HT for determining whether you contract it.\n\nAdditionally, if you do contract Oripathy, your resistance is lowered from the normal value (2x your HT score), though your progression between each stage of Oripathy changes to reflect your new value.\n\nYou may also never gain resistance to Oripathy-related circumstances outside of external equipment, and your innate Resistance does not apply to Oripathy-related scenarios.\n",
+							"cost_adj": "-10"
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tGTcDelgSeNi4hgAp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tSSmnBdJ1f7mFMRL5"
+					},
+					"name": "Social Stigma (Sarkaz)",
+					"reference": "B155",
+					"local_notes": "You aren't welcomed readily by most communities. Disguising yourself, while not impossible, is rarely a permanent solution to the problem.",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"modifiers": [
+						{
+							"id": "mvthzNFT4qXBitrbx",
+							"name": "Obvious from your appearance, dress or manner",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who sees you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mo2qdDGh8-sqHA3_4",
+							"name": "Obvious from your speech",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who hears you speak",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mFfQPcyHDX_q6Yh-_",
+							"name": "Easily learned by anyone who cares to check up on you",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from anyone who cares to check up on you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "makDeTtI4m9N3yQ6C",
+							"name": "Public Denouncement",
+							"use_level_from_trait": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from everryone you meet",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"disabled": true
+						}
+					],
+					"points_per_level": -5,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": -15,
+						"current_level": 3
+					}
+				},
+				{
+					"id": "txWa2nfuvBkjS0uLj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t1iVqO3Y2rUkguVzt"
+					},
+					"name": "Supernatural Features",
+					"reference": "B157",
+					"tags": [
+						"Disadvantage",
+						"Physical",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "m1P_wI2nsB3SxT4Nz",
+							"name": "No Body Heat",
+							"reference": "B157",
+							"local_notes": "Gives +1 on all rolls to deduce your secret",
+							"cost_adj": "-5",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who touch you, shake your hand, kiss you, etc.",
+									"amount": -1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mHJqgwRxdyE09sKr7",
+							"name": "No Body Heat",
+							"reference": "B157",
+							"local_notes": "Can gain warmth temporarily, such as after feeding for a vampire. Gives +1 on all rolls to deduce your secret",
+							"cost_adj": "-1",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who touch you, shake your hand, kiss you, etc.",
+									"amount": -1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mwzkR-mjRJ-LpqLTB",
+							"name": "No Reflection",
+							"reference": "B157",
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who notice you have no reflection",
+									"amount": -2
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m6Z_3Ab7QBXPVkblb",
+							"name": "No Shadow",
+							"reference": "B157",
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others that notice you have no shadow",
+									"amount": -2
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mg8hZSZYJ-5Ven_9z",
+							"name": "Pallor",
+							"reference": "B157",
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who can see you without makeup in good light",
+									"amount": -2
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mLTxJPJ1EkNBg2RRl",
+							"name": "Pallor",
+							"reference": "B157",
+							"local_notes": "Can gain the flush of life temporarily, such as after feeding for a vampire. Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-5",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who can see you without makeup in good light",
+									"amount": -2
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": -45
+			}
+		}
+	]
+}

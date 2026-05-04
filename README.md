@@ -474,3 +474,11 @@ Version 1.02
 * New content:
 - Attributes@Terran w. ORS & MP.attr attribute settings file added to the folder /Settings/Attributes
 - New Advantage 'Extra MP Points'
+
+-----------------------------
+
+Version 1.021
+
+* New content:
+- 'Vampire' racial template added
+- 'Hybrid' racial template added alongside new Hybrid and Chimeras race category

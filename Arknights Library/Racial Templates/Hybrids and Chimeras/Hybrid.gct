@@ -1,0 +1,708 @@
+{
+	"version": 5,
+	"id": "B4jkc8eI7nq0GIh46",
+	"traits": [
+		{
+			"id": "TyqtDJShNFtNA02A6",
+			"name": "Hybrid Racial Advantages",
+			"children": [
+				{
+					"id": "taG6lwQDyrjZgWu8C",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"id": "tBGhZ_va6XoXOVPH-"
+					},
+					"name": "Terran Physiology",
+					"local_notes": "You can always be stronger, you can always be faster, you can always be better. You may purchase all attributes at a cheaper price than normal. Your specific race may change these values, but will always be affected by this trait regardless. This does not reduce the cost of any Advantages.",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "hp",
+							"percentage": 50
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fp",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_move",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "basic_speed",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "per",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "fright_check",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "will",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "ht",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "iq",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tyABK4nJ-S-zuv_H8",
+					"name": "Hybrid Adaptability",
+					"local_notes": "Like the ocean's tide, the Seaborn are relentless in their assault on the land... always learning... and always changing.  You, as an amalgamation of Terran and Seaborn, are thusly gifted with their inherent ability to adapt to overcome any challenge they face.  Apply a 20% discount to the cost of either ST, DX, IQ, or HT (Pick one).",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 20
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tN3eT7XmKf12jqnKV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tS-7-nKXlxWatBXhg"
+					},
+					"name": "Amphibious",
+					"reference": "B40,P42",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tf7HondjXylbpK2xe",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tkCi-pV0exqSyPhyv"
+					},
+					"name": "Extra Limb (Seaborn)",
+					"reference": "B53",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mB6z3A5l9gmhRfS16",
+							"name": "Extra-Flexible",
+							"reference": "B53",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mcpZnf_Ph2cg47Heg",
+							"name": "Seaborn Mutation",
+							"cost_adj": "-20%"
+						},
+						{
+							"id": "my9T2ylkwd5nbMaQa",
+							"name": "Long",
+							"reference": "B53",
+							"cost_adj": "100%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mNzIm4pAk0Yk0VDyx",
+							"name": "Foot Manipulators",
+							"reference": "B53",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "mITvfor166rkizI42",
+							"name": "No Physical Attack",
+							"reference": "B53",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mJ5vA5TDNEsbIu0MP",
+							"name": "Short",
+							"reference": "B53",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mc7njlIk01gZ9wNS7",
+							"name": "Weak",
+							"reference": "B53",
+							"local_notes": "Half body ST",
+							"cost_adj": "-25%",
+							"disabled": true
+						},
+						{
+							"id": "mEELDBkW4HrnhbJyz",
+							"name": "Weak",
+							"reference": "B53",
+							"local_notes": "Quarter body ST",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mG2LbBPvfO5AYR5AO",
+							"name": "No Grasping Hand",
+							"reference": "MATG28",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"calc": {
+						"points": 0,
+						"current_level": 0
+					}
+				},
+				{
+					"id": "tecZmipkazQngC-RJ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tLFklg798TKhdKuDn"
+					},
+					"name": "Extra Legs (Seaborn)",
+					"reference": "B54",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mZ576eakw4eioI74N",
+							"name": "Seaborn Mutation",
+							"cost_adj": "-20%"
+						},
+						{
+							"id": "mcFiFFYtXQiixAhR7",
+							"name": "@3 or 4@",
+							"reference": "B54",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "mA0LlQpQew1sck46Q",
+							"name": "@5 or 6@",
+							"reference": "B55",
+							"cost_adj": "10",
+							"disabled": true
+						},
+						{
+							"id": "md-4p-pJnfSjST4RQ",
+							"name": "@7+@",
+							"reference": "B55",
+							"cost_adj": "15",
+							"disabled": true
+						},
+						{
+							"id": "mK_jckNDDKldY9eKU",
+							"name": "Long",
+							"reference": "B55",
+							"cost_adj": "100%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mbFTZgUq2-p-54Cyp",
+							"name": "Cannot Kick",
+							"reference": "B55",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mw5AxbGtb35MVd5wK",
+							"name": "Extra Flexible",
+							"reference": "MATG27",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mbpBZa3PT46LJbgs-",
+							"name": "Prehensile Feet",
+							"reference": "MATG28",
+							"cost_adj": "20%",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t1CSbebMYhrGjvy9H",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "trUV-dtFgMs1vSSlr"
+					},
+					"name": "Mindlink (Seaborn)",
+					"reference": "B70",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mj0LByvK7KrrmMN0K",
+							"name": "Single person",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "mjQZkWqJx_G01Wy_V",
+							"name": "2-9 people",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "10",
+							"disabled": true
+						},
+						{
+							"id": "mZ3jqD_APyPQNp5nz",
+							"name": "10-99 people",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "20",
+							"disabled": true
+						},
+						{
+							"id": "mWWqMS2BF_qFG9YaN",
+							"name": "100-999 people",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "30",
+							"disabled": true
+						},
+						{
+							"id": "m4uQEURzjNyAA4C5O",
+							"name": "1000-9999 people",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "40",
+							"disabled": true
+						},
+						{
+							"id": "mnT-HhXeVB0OlaFHv",
+							"name": "10000-99999 people",
+							"reference": "B70",
+							"local_notes": "@Who@",
+							"cost_adj": "50",
+							"disabled": true
+						},
+						{
+							"id": "m7L1etL4kxUyhBy1H",
+							"name": "Broadcast",
+							"reference": "B91",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mNtueYTO1cY-xrBor",
+							"name": "Cybernetic",
+							"reference": "B69",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mm0iQM6cRsLJny4J6",
+							"name": "Sensory",
+							"reference": "B69",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mamF2jww6LVGZs0XU",
+							"name": "Universal",
+							"reference": "B69",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mLZcq2LxjfNgkXCA2",
+							"name": "Video",
+							"reference": "B91",
+							"cost_adj": "40%",
+							"disabled": true
+						},
+						{
+							"id": "m4HtXIDosFv9Dh1h7",
+							"name": "Cybernetic Only",
+							"reference": "B70",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "m9zYPyFC_zuz3lIfl",
+							"name": "Racial",
+							"reference": "B70",
+							"local_notes": "@Race@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mE3AWHdkvj0GQwBVA",
+							"name": "Seaborn Hivemind"
+						},
+						{
+							"id": "mZ1NtI-8zNeu5o0Ph",
+							"name": "Sensory Only",
+							"reference": "B70",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mfbMvkhkE3Pw0K1_x",
+							"name": "Telecommunication",
+							"reference": "B70",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mSywnKmtRumG0XVh0",
+							"name": "Vague",
+							"reference": "B91",
+							"cost_adj": "-50%",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tJ06inJFXujUl4I2H",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tAZ2CavSLHdVMI5HJ"
+					},
+					"name": "Pressure Support (Hybrid)",
+					"reference": "B77",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mWrWXoJlZa9HZaMg1",
+							"name": "Hybrid Biology",
+							"cost_adj": "-5"
+						}
+					],
+					"points_per_level": 5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "txQBWlwW2def4xxAA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "trMfToThYl9fEmPdt"
+					},
+					"name": "Rapid Healing",
+					"reference": "B79",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to your effective HT whenever you roll to recover lost HP or to see if you can get over a crippling injury",
+							"amount": 5
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "t7HzSU-t_V8KQ2BX-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tJTfFdHM7YI5IZR7I"
+					},
+					"name": "Resistant",
+					"reference": "B81,P71,MA47",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mJErBhAj3eQTfdTnX",
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_adj": "30",
+							"disabled": true
+						},
+						{
+							"id": "m3WLaS74LIu1LuOr_",
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost_adj": "15",
+							"disabled": true
+						},
+						{
+							"id": "mHgyG1E4igLa3YfRv",
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost_adj": "10"
+						},
+						{
+							"id": "mULyZAAfga575CW2R",
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "milSvLO8XnFmvnMvQ",
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "mkjNBA3eQOoa5-N7o",
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mYSZCYyJDTdkIyR8C",
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.33",
+							"disabled": true
+						}
+					],
+					"round_down": true,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 25
+			}
+		},
+		{
+			"id": "TMBSw1LAq2J8eBtT3",
+			"name": "Hybrid Racial Disadvantages",
+			"children": [
+				{
+					"id": "tqpzru96gaKCXVkpD",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tkH3Z500lfDbdUbtv"
+					},
+					"name": "Phantom Voices (Seaborn Hivemind)",
+					"reference": "B148",
+					"local_notes": "The Seaborn Hivemind is always speaking… and you are always listening.  Even if you can maintain a standard quality of life, the Firstborn’s voice will always be there in the back of your mind.\n\nIn any situation that the GM feels is stressful, he may roll 3d. On a 6 or less, you hear voices. The GM will always roll whenever you miss a Fright Check or make the roll exactly, and whenever you fail a self-control roll for another stress-related disadvantage.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mFej0m9VttkjgZ5p8",
+							"name": "Annoying",
+							"reference": "B148",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "m7ylsx-IAFlSovO1E",
+							"name": "Disturbing",
+							"reference": "B148",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "miIe_aZ8quLlbDCBy",
+							"name": "Seaborn Hivemind",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "mYEn8je1nSoxLeIVG",
+							"name": "Diabolical",
+							"reference": "B148",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tdbpuJjE-TKQIr-RG",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tzWQ90ARlX5DcAAu7"
+					},
+					"name": "Nightmares (Seaborn)",
+					"reference": "B144",
+					"local_notes": "Sleeping may be a time of rest and comfort for most other races, but for you, it is a time where all other distractions from the Abyss’s call are removed.  And on some nights, that call is particularly loud and disruptive.\n\nMake a self-control roll each morning upon awakening. If you fail, you suffered nightmares; this costs you 1 FP that you can only recover through sleep. On a roll of 17 or 18, you are left shaking, and are at -1 to all skill and Perception rolls for the entire day.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tV6lw8d1bFfHbwCSc",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tVtZXW1iMP4GMuRf1"
+					},
+					"name": "Social Stigma (Hybrid)",
+					"reference": "B155",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from Church of the Deep Cultists",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from non-cultist Iberians",
+							"amount": -4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from strangers",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "t00GedSmHCarvlYcd",
+					"name": "Flawed Arts",
+					"local_notes": "Due to your existence as a hybrid of Terran and Seaborn, your affinity for Originium Arts has been altered to a point of being completely nonfunctional.\n\nArts Casting/Magery cannot be taken as traits and spells cannot be learned.",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Arts Casting"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Magery"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				}
+			],
+			"calc": {
+				"points": -40
+			}
+		}
+	]
+}
