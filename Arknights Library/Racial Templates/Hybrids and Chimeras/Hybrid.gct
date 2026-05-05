@@ -84,7 +84,7 @@
 						{
 							"type": "cost_reduction",
 							"attribute": "st",
-							"percentage": 20
+							"percentage": 30
 						}
 					],
 					"calc": {
