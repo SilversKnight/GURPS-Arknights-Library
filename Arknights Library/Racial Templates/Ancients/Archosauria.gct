@@ -73,49 +73,22 @@
 				},
 				{
 					"id": "tzubK4nG2pogzUhaD",
-					"name": "Ursine Physiology",
-					"local_notes": "Your unique capabilities allow you to purchase ST and HT cheaper, at the cost of some fine motor skills. Alongside this, you gain some inherent extra lifting power, and are more difficult to put down.",
+					"name": "Archosauria Physiology",
+					"local_notes": "Your unique capabilities allow you to purchase ST and HT for cheaper prices.",
 					"features": [
 						{
 							"type": "cost_reduction",
 							"attribute": "st",
-							"percentage": 40
+							"percentage": 20
 						},
 						{
 							"type": "cost_reduction",
 							"attribute": "ht",
-							"percentage": 40
+							"percentage": 20
 						}
 					],
 					"calc": {
 						"points": 0
-					}
-				},
-				{
-					"id": "t0yZluOiRB2roPROD",
-					"name": "Ursine Clumsiness",
-					"local_notes": "Ursine capabilities trend more towards their immense power and fitness, and not often to their Dextrous nature. When spending on DX, increase this Trait instead of increasing the Attribute directly.",
-					"modifiers": [
-						{
-							"id": "mJ4cCWz5aqwReC5t_",
-							"name": "Trait Modifier",
-							"cost_adj": "-20%",
-							"disabled": true
-						}
-					],
-					"points_per_level": 20,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "dx",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"calc": {
-						"points": 0,
-						"current_level": 0
 					}
 				}
 			],
@@ -127,6 +100,129 @@
 			"id": "TCMsbgk0Xsp5MevXm",
 			"name": "Racial Advantages",
 			"children": [
+				{
+					"id": "t9Qu0ZCh48IRN0O-9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tS-7-nKXlxWatBXhg"
+					},
+					"name": "Amphibious",
+					"reference": "B40,P42",
+					"local_notes": "As an Archosauria, you're naturally adept in swimming.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tZt7ntqGe_2AV4W5r",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tkCi-pV0exqSyPhyv"
+					},
+					"name": "Extra Arm",
+					"reference": "B53",
+					"local_notes": "You have a powerful tail that can be used to manipulate items. You may buy Extra-Flexible and Long enhancements at a half price discount.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m2lOG-G-kkdNE5EHz",
+							"name": "Extra-Flexible(Archosauria)",
+							"reference": "B53",
+							"cost_adj": "+25%",
+							"disabled": true
+						},
+						{
+							"id": "mvooNcU14vz6kdOpG",
+							"name": "Long (Archosauria)",
+							"cost_adj": "+50%",
+							"disabled": true
+						},
+						{
+							"id": "mQzch_dZPAtZ2iFOO",
+							"name": "Extra-Flexible",
+							"reference": "B53",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "muWhpv98RwQDufaM8",
+							"name": "Long",
+							"reference": "B53",
+							"cost_adj": "100%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mkwkT0i-I10kq7q3f",
+							"name": "Foot Manipulators",
+							"reference": "B53",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "mhQeXUnmfZnLKgmLI",
+							"name": "No Physical Attack",
+							"reference": "B53",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mVOfGiRk7GVPgF-9m",
+							"name": "Short",
+							"reference": "B53",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mnxvTzZR0rXhf7u2l",
+							"name": "Weak",
+							"reference": "B53",
+							"local_notes": "Half body ST",
+							"cost_adj": "-25%",
+							"disabled": true
+						},
+						{
+							"id": "mwjWmeO9FhpYV1_di",
+							"name": "Weak",
+							"reference": "B53",
+							"local_notes": "Quarter body ST",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mMuIH2WZNtFVqaVb4",
+							"name": "Weapon Mount",
+							"reference": "B53",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mllgAVfShjThBY_dP",
+							"name": "No Grasping Hand",
+							"reference": "MATG28",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5,
+						"current_level": 1
+					}
+				},
 				{
 					"id": "tCIecKbPXwwOiJg7u",
 					"source": {
@@ -143,20 +239,20 @@
 					],
 					"modifiers": [
 						{
-							"id": "mgNwK2HoMOy20XEBb",
+							"id": "mlbA1wFOoeZ9Kr9F9",
 							"name": "Kuranta, Pegasus, Nightzmoran Physiology",
 							"local_notes": "You naturally stay in shape.",
 							"cost_adj": "-100%",
 							"disabled": true
 						},
 						{
-							"id": "m0ktuefe2zwyO_uAP",
+							"id": "mdr-lMhil_j3SBFs5",
 							"name": "Archosauria, Ursine Physiology",
 							"local_notes": "It's hard to keep you down.",
 							"cost_adj": "-5"
 						},
 						{
-							"id": "mDRmevR2Gg-VlINIo",
+							"id": "m5T4_S-Q7VpKdqtiu",
 							"name": "Vouivre Physiology",
 							"local_notes": "You naturally stay in shape. As a Vouivre, your capabilities trend towards the physical.",
 							"cost_adj": "-40%",
@@ -182,7 +278,7 @@
 						"path": "Basic Set\\Basic Set Traits.adq",
 						"id": "txSLRSX9nxLwQkE2n"
 					},
-					"name": "Ursine Resilence",
+					"name": "Archosauria Resilence",
 					"reference": "B58",
 					"local_notes": "You're hard to put down. In any situation where you may need to roll against dying, you receive a bonus equal to this trait's level. This counts as Hard to Kill, and cannot be levelled past this point.",
 					"tags": [
@@ -191,9 +287,9 @@
 					],
 					"modifiers": [
 						{
-							"id": "mjh1436OQBI6srPQB",
-							"name": "Ursine Physiology",
-							"cost_adj": "-6"
+							"id": "mI6E9_909zPuRm69n",
+							"name": "Archosauria Physiology",
+							"cost_adj": "-2"
 						}
 					],
 					"points_per_level": 2,
@@ -206,10 +302,10 @@
 						}
 					],
 					"can_level": true,
-					"levels": 3,
+					"levels": 1,
 					"calc": {
 						"points": 0,
-						"current_level": 3
+						"current_level": 1
 					}
 				},
 				{
@@ -219,7 +315,7 @@
 						"path": "Basic Set\\Basic Set Traits.adq",
 						"id": "t5K9V7-_MYD_0BOQ8"
 					},
-					"name": "Ursine Tenacity",
+					"name": "Archosauria Tenacity",
 					"reference": "B59",
 					"local_notes": "It's hard to put you under. In any situation where you may need to roll HT to avoid unconsciousness, you receive a bonus equal to this trait's level. This counts as Hard to Subdue, and cannot be levelled past this point.",
 					"tags": [
@@ -228,9 +324,9 @@
 					],
 					"modifiers": [
 						{
-							"id": "mitIL0YK0cVhSoxMO",
-							"name": "Ursine Physiology",
-							"cost_adj": "-6"
+							"id": "mZkj98dR7Ng5LwvpB",
+							"name": "Archosauria Physiology",
+							"cost_adj": "-2"
 						}
 					],
 					"points_per_level": 2,
@@ -243,10 +339,10 @@
 						}
 					],
 					"can_level": true,
-					"levels": 3,
+					"levels": 1,
 					"calc": {
 						"points": 0,
-						"current_level": 3
+						"current_level": 1
 					}
 				},
 				{
@@ -265,36 +361,36 @@
 					],
 					"modifiers": [
 						{
-							"id": "mETI5FMlQEXSJOxuI",
+							"id": "mQyGhBVVupQmtqw1v",
 							"name": "No Fine Manipulators",
 							"reference": "B15",
 							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "mCtlhrOlZC0md4Y_P",
+							"id": "mW5MBYJyvTc0oH_eH",
 							"name": "Archosauria, Cyclops, Durin, Gargoyle, Forte, ",
 							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "mFB3ePEfYc9v_lWhP",
+							"id": "mA4J9Skt5nBQH50oT",
 							"name": "Goliath, Oni, Ursine, Vouivre, Archosauria Physiology",
 							"cost_adj": "-40%"
 						},
 						{
-							"id": "mctrCis00G5uhwh1G",
+							"id": "mAsRyuZG8NUiPduZW",
 							"name": "Archosauria, Ursine Power",
 							"cost_adj": "-5"
 						},
 						{
-							"id": "mhzoqzeuUxKzDGsL5",
+							"id": "mSRv354Hy5b3X8DDb",
 							"name": " Anaty, Anura, Liberi, Sankta, Vulpo, Zalak Physiology",
 							"cost_adj": "20%",
 							"disabled": true
 						},
 						{
-							"id": "mIKtVP33MZ2p5zaZN",
+							"id": "mgee0IhBibu2SNa3-",
 							"name": "Size",
 							"reference": "B15",
 							"cost_adj": "-10%",
@@ -302,14 +398,14 @@
 							"disabled": true
 						},
 						{
-							"id": "muT2frHO2sXxex46r",
+							"id": "mTuvUHYQ4mV1U9SFx",
 							"name": "Super-Effort",
 							"reference": "P58",
 							"cost_adj": "400%",
 							"disabled": true
 						},
 						{
-							"id": "mBlrSvossZ_GiUlAo",
+							"id": "m_tEHch3sRdnNu84Z",
 							"name": "Know Your Own Strength Variant Price",
 							"reference": "PY83:18",
 							"cost_adj": "4",
@@ -317,14 +413,14 @@
 							"disabled": true
 						},
 						{
-							"id": "miDyrtJMyha5D3pRj",
+							"id": "mZ7lJRag6PECpudR4",
 							"name": "@Limb@ Grip ST",
 							"reference": "MATG28",
 							"cost_adj": "-70%",
 							"disabled": true
 						},
 						{
-							"id": "mJVXdQo38VhNeFey7",
+							"id": "mNnNGXbcWCw4Zf1ub",
 							"name": "Bite ST",
 							"reference": "MATG28",
 							"cost_adj": "-70%",
@@ -347,242 +443,6 @@
 						"points": 0,
 						"current_level": 1
 					}
-				},
-				{
-					"id": "tLqq0UCWwqa8YVD75",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Traits.adq",
-						"id": "tBmSJ3pNE53c4IRUU"
-					},
-					"name": "Ursine Toughness",
-					"reference": "B47,P45,MA43,PSI14",
-					"local_notes": "You gain DR 2 to all body parts, except for the eyes, which stacks with normal armor.",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "m_UdOQw2s-XPq3fb4",
-							"name": "Force Field",
-							"reference": "B47",
-							"cost_adj": "20%",
-							"disabled": true
-						},
-						{
-							"id": "mToy7wg6WZBBb52Wv",
-							"name": "Ursine Physiology",
-							"cost_adj": "-5"
-						},
-						{
-							"id": "mYA8-CVS3oGAwXDIm",
-							"name": "Hardened",
-							"reference": "B47",
-							"cost_adj": "20%",
-							"levels": 1,
-							"disabled": true
-						},
-						{
-							"id": "mFH8ukuNzCm8eBxmq",
-							"name": "Absorption",
-							"reference": "B46",
-							"local_notes": "Enhances @Trait@",
-							"cost_adj": "80%",
-							"disabled": true
-						},
-						{
-							"id": "m869fTf8sKHOcgHpX",
-							"name": "Absorption",
-							"reference": "B46",
-							"local_notes": "Healing only",
-							"cost_adj": "80%",
-							"disabled": true
-						},
-						{
-							"id": "m04SOtm3fVUDmBYCv",
-							"name": "Absorption",
-							"reference": "B46",
-							"local_notes": "Enhances any trait",
-							"cost_adj": "100%",
-							"disabled": true
-						},
-						{
-							"id": "mSBrRUXTLHAiQKkND",
-							"name": "Reflection",
-							"reference": "B47",
-							"cost_adj": "100%",
-							"disabled": true
-						},
-						{
-							"id": "mIXruep8i3Tk5iKl8",
-							"name": "Bane",
-							"reference": "H14",
-							"local_notes": "@Rare@",
-							"cost_adj": "-1",
-							"disabled": true
-						},
-						{
-							"id": "mr3VI6TL_oBh6onqQ",
-							"name": "Bane",
-							"reference": "H14",
-							"local_notes": "@Occasional@",
-							"cost_adj": "-5%",
-							"disabled": true
-						},
-						{
-							"id": "mAShKhcAI6XerYpnt",
-							"name": "Bane",
-							"reference": "H14",
-							"local_notes": "@Common@",
-							"cost_adj": "-10%",
-							"disabled": true
-						},
-						{
-							"id": "mqn8ZIMLuhoFq5j9N",
-							"name": "Bane",
-							"reference": "H14",
-							"local_notes": "@Very Common@",
-							"cost_adj": "-15%",
-							"disabled": true
-						},
-						{
-							"id": "m1y660IsqbhHiJ3FR",
-							"name": "Directional",
-							"reference": "B47",
-							"local_notes": "Front",
-							"cost_adj": "-20%",
-							"disabled": true
-						},
-						{
-							"id": "mH74WJhPLqnl4sGf3",
-							"name": "Flexible",
-							"reference": "B47",
-							"cost_adj": "-20%",
-							"disabled": true
-						},
-						{
-							"id": "mM1fOAWYqLzy3AVqn",
-							"name": "Limited",
-							"reference": "B46",
-							"local_notes": "@Very Common Attack Form@",
-							"cost_adj": "-20%",
-							"disabled": true
-						},
-						{
-							"id": "mAb7oM1yn__ARdzBT",
-							"name": "Semi-Ablative",
-							"reference": "B47",
-							"cost_adj": "-20%",
-							"disabled": true
-						},
-						{
-							"id": "mVlbFJp0UTAxSxIvR",
-							"name": "Can't wear armor",
-							"reference": "B47",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "mWJARlClOphfuBu8N",
-							"name": "Directional",
-							"reference": "B47",
-							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "mEgb2GQ6OepIvbddQ",
-							"name": "Limited",
-							"reference": "B46",
-							"local_notes": "@Common Attack Form@",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "m9g9TAoldP9YUtnTc",
-							"name": "Tough Skin",
-							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "m9M3AZ_Mc8EzGJaNS",
-							"name": "Limited",
-							"reference": "B46",
-							"local_notes": "@Occasional Attack Form@",
-							"cost_adj": "-60%",
-							"disabled": true
-						},
-						{
-							"id": "msa9TNPU8R1i3TcjG",
-							"name": "Ablative",
-							"reference": "B47",
-							"cost_adj": "-80%",
-							"disabled": true
-						},
-						{
-							"id": "mnFkp3Cs8ItTwmNLh",
-							"name": "Limited",
-							"reference": "B46",
-							"local_notes": "@Rare Attack Form@",
-							"cost_adj": "-80%",
-							"disabled": true
-						},
-						{
-							"id": "mMaY5_LRZo0HA1ZxJ",
-							"name": "Laminate",
-							"reference": "RSWL18",
-							"cost_adj": "10%",
-							"disabled": true
-						},
-						{
-							"id": "mUQiVJbPDtJLJa6cY",
-							"name": "Malediction-Proof",
-							"reference": "PSI14",
-							"cost_adj": "50%",
-							"disabled": true
-						},
-						{
-							"id": "mTQV8d3gSGUOx_Dhf",
-							"name": "Maledictions Only",
-							"reference": "PSI14",
-							"disabled": true
-						},
-						{
-							"id": "mEM7FpDbGxr89xMMX",
-							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
-							"reference": "B47",
-							"cost_adj": "-10%",
-							"disabled": true
-						}
-					],
-					"points_per_level": 5,
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"eye"
-							],
-							"amount": -1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 2,
-					"calc": {
-						"points": 5,
-						"current_level": 2
-					}
 				}
 			],
 			"calc": {
@@ -594,173 +454,131 @@
 			"name": "Racial Disadvantages",
 			"children": [
 				{
-					"id": "tI4FP40Q-vuIMkJxu",
+					"id": "tU6by468Rcovf4mMs",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Traits.adq",
-						"id": "tx3gYRgamuFWB9JPN"
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tErK4cLrSt07-XLYQ"
 					},
-					"name": "Ham-Fisted",
-					"reference": "B138",
+					"name": "Distinctive Features",
+					"reference": "B165",
+					"local_notes": "Your large tail is easily recognizeable.",
 					"tags": [
-						"Disadvantage",
-						"Physical"
+						"Physical",
+						"Quirk"
 					],
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": false,
-								"name": {
-									"compare": "is",
-									"qualifier": "high manual dexterity"
-								}
-							}
-						]
-					},
-					"points_per_level": -5,
+					"base_points": -1,
 					"features": [
 						{
 							"type": "skill_bonus",
 							"selection_type": "skills_with_name",
 							"name": {
-								"compare": "contains",
-								"qualifier": "artist"
+								"compare": "is",
+								"qualifier": "disguise"
 							},
-							"amount": -3,
-							"per_level": true
+							"amount": -1
 						},
 						{
 							"type": "skill_bonus",
 							"selection_type": "skills_with_name",
 							"name": {
 								"compare": "is",
-								"qualifier": "jeweler"
+								"qualifier": "shadowing"
 							},
-							"amount": -3,
-							"per_level": true
+							"amount": -1
 						},
 						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "knot-tying"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "leatherworking"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "lockpicking"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "pickpocket"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "sewing"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "sleight of hand"
-							},
-							"amount": -3,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "surgery"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "machinist"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "mechanic"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "fast-draw"
-							},
-							"amount": -3
-						},
-						{
-							"type": "reaction_bonus",
-							"situation": "from others where being tidy or well-groomed would matter",
-							"amount": -1,
-							"per_level": true
-						},
-						{
-							"type": "reaction_bonus",
-							"situation": "to any Influence roll where being tidy or well-groomed would matter",
-							"amount": -1,
-							"per_level": true
+							"type": "conditional_modifier",
+							"situation": "to others’ attempts to identify or follow you",
+							"amount": 1
 						}
 					],
-					"can_level": true,
-					"levels": 1,
 					"calc": {
-						"points": -5,
-						"current_level": 1
+						"points": -1
+					}
+				},
+				{
+					"id": "t61i1URfq-Wvuz0Wj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tXnB__Om4YM2hwTL7"
+					},
+					"name": "Cold-Blooded",
+					"reference": "B127",
+					"local_notes": "Under 50-degrees",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT to resist the effects of temperature",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tgBZKImrc3BQpL0B4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "te2vFre2KU0dZrDgd"
+					},
+					"name": "Increased Consumption",
+					"reference": "B139",
+					"local_notes": "Archosauria physiology is adapted to wet climates. In dry climates, you may need to drink a lot more water than usual to retain your moisture. ",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m1J-tbAjY5Qh7FjLp",
+							"name": "Consumption x2",
+							"reference": "B139",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "m7g8HApa4tpoqHI8g",
+							"name": "Consumption x4",
+							"reference": "B139",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mu9Lb4SKCxwSg9GrA",
+							"name": "Consumption x8",
+							"reference": "B139",
+							"cost_adj": "-30",
+							"disabled": true
+						},
+						{
+							"id": "mFumOZksrrjokSZp2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Limitation Modifiers.adm",
+								"id": "m2IwCpU9KwYmjiSSA"
+							},
+							"name": "Accessibility",
+							"reference": "B110,P99",
+							"local_notes": "-50%",
+							"cost_adj": "-50%"
+						}
+					],
+					"calc": {
+						"points": -5
 					}
 				}
 			],
 			"calc": {
-				"points": -5
+				"points": -11
 			}
 		}
 	],

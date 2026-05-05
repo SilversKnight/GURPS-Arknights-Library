@@ -482,3 +482,11 @@ Version 1.021
 * New content:
 - 'Vampire' racial template added
 - 'Hybrid' racial template added alongside new Hybrid and Chimeras race category
+
+-----------------------------
+
+Version 1.022
+
+* New content:
+- 'Archosauria' racial template added
+- Updated Advantage descriptors on Ursine and Goliath templates
