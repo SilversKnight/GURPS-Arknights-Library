@@ -324,7 +324,7 @@
 				{
 					"id": "t2YkWWiHRs9HyHGm-",
 					"name": "Vampire's Embrace",
-					"local_notes": "A Vampire's thirst for blood is unrelenting and in the midst of feeding, their focus is single-minded and unbreakable.  As a consequence from having to forcibly acquire their blood directly from the source for generations, a Vampire instinctively knows how to keep their victim tightly in their grasp, at least until they sate their hunger.\n\n+1 to all grappling checks.  Increase to +2 if currently suffering from the effects of Dependency (Blood).",
+					"local_notes": "A Vampire's thirst for blood is unrelenting and in the midst of feeding, their focus can be single-minded and unbreakable.  As a consequence from having to forcibly acquire their blood directly from the source for generations, a Vampire instinctively knows how to keep their victim tightly in their grasp, at least until they sate their hunger.\n\n+1 to all grappling checks.  Increase to +2 if currently suffering from the effects of Dependency (Blood).",
 					"calc": {
 						"points": 0
 					}
@@ -332,8 +332,17 @@
 				{
 					"id": "tObwjS9dxsGSJamQU",
 					"name": "Vampire's Heritage",
-					"local_notes": "Not only does it sustain you, your kind have venerated the ichor of life to the point your arts have an innate specialization in manipulating it.  Besides providing a +1 advantage when casting any blood-related spell, it also allows you to ignore the standard requirements in learning blood arts.",
+					"local_notes": "Blood.  Not only does it sustain you, your kind have venerated the ichor of life to the point your arts have an innate specialization in manipulating it.  Besides providing a +1 advantage when casting any blood-related spell, it also allows you to ignore the standard requirements in learning blood arts.",
 					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "spell_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "Healing"
+							},
+							"amount": 1
+						},
 						{
 							"type": "spell_bonus",
 							"match": "spell_name",
