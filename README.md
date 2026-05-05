@@ -490,3 +490,4 @@ Version 1.022
 * New content:
 - 'Archosauria' racial template added
 - Updated Advantage descriptors on Ursine and Goliath templates
+- Hybrid flexible stat discount increased to 30%
